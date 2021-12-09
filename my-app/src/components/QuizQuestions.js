@@ -1,14 +1,26 @@
 import React from "react";
 
-function QuizQuestions({quiz}) {
+function QuizQuestions({question}) {
     return (
-        <div>
-            <div>
-                <h2>{quiz.question}</h2>
-                    <input type="checkbox">{quiz.answera}</input>
-                    <input type="checkbox">{quiz.answerb}</input>
-                    <input type="checkbox">{quiz.answerc}</input>
-                    <input type="checkbox">{quiz.answerd}</input>
+        <div className="quizMainDiv">
+            <div className="questionContainer">
+                <h3 className="quizQuestion">{question.question}</h3>
+                    <li className="answerLi">
+                        <input className="answerCheck" type="checkbox" id="answera" value={question.answera}></input>
+                        <label htmlFor="answera" className="quizAnswer">{question.answera}</label>
+                    </li>
+                    <li className="answerLi">
+                        <input className="answerCheck" type="checkbox" id="answerb" value={question.answerb}></input>
+                        <label htmlFor="answerb" className="quizAnswer">{question.answerb}</label>
+                    </li>
+                    <li className="answerLi">
+                        <input className="answerCheck" type="checkbox" id="answerc" value={question.answerc}></input>
+                        <label htmlFor="answerc" className="quizAnswer">{question.answerc}</label>
+                    </li>
+                    <li className="answerLi">
+                        <input className="answerCheck" type="checkbox" id="answerd" value={question.answerd}></input>
+                        <label htmlFor="answerd" className="quizAnswer">{question.answerd}</label>
+                    </li>
             </div>
         </div>
     )
