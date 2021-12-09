@@ -1,10 +1,11 @@
 import React, {useState, useEffect} from "react";
-import Crunchyroll from "../images/Crunchyroll.png"
+import OrangeGradiant from "../images/OrangeGradiant.jpg"
 import QuizQuestions from "./QuizQuestions"
 // import AnimeResult from './components/AnimeResult'
 
 function QuizContainer() {
     const [quiz, setQuiz] = useState([])
+    const [checkedAnswer, setCheckedAnswer] = useState("");
     // const [anime, setAnime] = useState([])
 
     useEffect(() => {
@@ -14,13 +15,18 @@ function QuizContainer() {
     }, [])
 
     const renderedQuestions = quiz.map((question) => (
-        <QuizQuestions question={question} key={question.id}/>
+        <QuizQuestions 
+        question={question} 
+        key={question.id} 
+        checkedAnswer={checkedAnswer} 
+        setCheckedAnswer={setCheckedAnswer}
+        />
     ))
 
     // const renderedAnimeResult = 
 
     return (
-        <div className="quizMainDiv" style={{ backgroundImage: `url(${Crunchyroll})`}}>
+        <div className="quizMainDiv" style={{ backgroundImage: `url(${OrangeGradiant})`}}>
             <div>
             {renderedQuestions}
             </div>
