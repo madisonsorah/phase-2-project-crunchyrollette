@@ -39,7 +39,6 @@ body {
 }
 
 .navImgDiv {
-  font-family: "Helvetica Neue", Arial, sans-serif;
   padding: 10px;
   text-align: center;
   float: left;
@@ -52,14 +51,31 @@ body {
 }
 
 .navLi {
-  font-family: "Helvetica Neue", Arial, sans-serif;
-  font-size: medium;
-  font-weight: 700;
   display: inline;
   padding: 10px;
 }
 
-.navLi:hover {
+a:link {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  color: #000;
+  font-size: medium;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+a:visited {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  color: #000;
+  font-size: medium;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+a:hover {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: medium;
+  font-weight: 700;
+  text-decoration: none;
   color: #df6300
 }
 
@@ -97,10 +113,21 @@ body {
 .startPageMainDiv {
   padding: 70px 0;
   text-align: center;
-  color: #FFF;
+  color: #000;
   padding-top: 100px;
   padding-bottom: 100px;
-  background-color:#df6300;
+  background-size: 3000px;
+  background-repeat: no-repeat;
+}
+
+.startContainer {
+  background-color: #fff;
+  text-align: center;
+  width: 600px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: auto;
+  box-shadow: 0 8px 16px 0 #964300;
 }
 
 .startPageHeader {

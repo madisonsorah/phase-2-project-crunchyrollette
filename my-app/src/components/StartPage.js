@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import QuizContainer from "./QuizContainer"
 import CrunchyRollHime from "../images/CrunchyrollHime.png"
+import OrangeGradiant from "../images/OrangeGradiant.jpg"
 
 function StartPage() {
     const [isStarted, setStart] = useState(false);
@@ -12,8 +13,8 @@ function StartPage() {
         return <QuizContainer />
     } else {
         return (
-        <div className="startPageMainDiv">
-                <div>
+        <div className="startPageMainDiv" style={{ backgroundImage: `url(${OrangeGradiant})` }}>
+                <div className="startContainer">
                     <h2 className="startPageHeader">Which Anime Series Should I Start Next?</h2>
                     <p className="startPageP">Can't decide on a series to start? Answer these six questions and we'll give you a personalized recommendation!</p>
                     <button onClick={handleClick} className="startPageButton">LET'S GO!</button>
