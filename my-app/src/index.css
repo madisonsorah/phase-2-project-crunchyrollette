@@ -1,0 +1,133 @@
+/* body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */
+
+body {
+  margin: auto;
+  user-select: none;
+}
+
+.mainNavDiv {
+  background-color: #FFF;
+  padding-top: 10px;
+  padding-bottom: 60px;
+  border-bottom: 0.09rem solid #000;
+}
+
+.navLogo {
+  width: 135px;
+  height: 27px;
+}
+
+.navUl {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  list-style-type: none;
+  float: left;
+}
+
+.navImgDiv {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  padding: 10px;
+  text-align: center;
+  float: left;
+}
+
+.navFormDiv {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  padding: 5px;
+  float: right;
+}
+
+.navLi {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: medium;
+  font-weight: 700;
+  display: inline;
+  padding: 10px;
+}
+
+.navLi:hover {
+  color: #df6300
+}
+
+.navForm {
+  display: inline;
+  float: right;
+  padding: 5px;
+}
+
+.navInput {
+  padding: 8px;
+  border: 0.09rem solid rgb(190, 190, 190);
+}
+
+::placeholder {
+  opacity: 1.0;
+  color:rgb(190, 190, 190);
+}
+
+.headerDiv {
+  text-align: center;
+  margin: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  background-color: rgb(48, 47, 47);
+  color: #FFF;
+}
+
+.header {
+  font-family: Nutmeg, sans-serif;
+  text-align: center;
+}
+
+.startPageMainDiv {
+  padding: 70px 0;
+  text-align: center;
+  color: #FFF;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color:#df6300;
+}
+
+.startPageHeader {
+  font-family: Nutmeg, sans-serif;
+}
+
+.startPageImg {
+  margin: auto;
+  padding: 20px;
+  width: 400px;
+  height: 400px;
+}
+
+.startPageP {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  padding:15px;
+}
+
+.startPageButton {
+  font-family: Nutmeg, sans-serif;
+  margin: auto;
+  font-size: large;
+  font-weight: 600;
+  color:#FFF;
+  background-color:rgb(48, 47, 47);
+  border: 0.09rem solid #FFF;
+  padding: 5px;
+}
+
+.startPageButton:hover {
+  color:rgb(48, 47, 47);
+  background-color: #FFF;
+}
