@@ -144,9 +144,8 @@ body {
   text-align: center;
   padding-top: 2.5px;
   padding-bottom: 2.5px;
-  background-size: 1000px;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-size: 200px;
+  background-repeat: repeat;
 }
 
 .questionContainer {
