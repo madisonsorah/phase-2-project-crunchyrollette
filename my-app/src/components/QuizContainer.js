@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from "react";
+import CrunchyrollHimeBackground from "../images/CrunchyrollHimeBackground.png"
 import QuizQuestions from "./QuizQuestions"
 // import AnimeResult from './components/AnimeResult'
 
@@ -19,7 +20,7 @@ function QuizContainer() {
     // const renderedAnimeResult = 
 
     return (
-        <div className="quizMainDiv">
+        <div className="quizMainDiv" style={{ backgroundImage: `url(${CrunchyrollHimeBackground})`}}>
             <div>
             {renderedQuestions}
             </div>
