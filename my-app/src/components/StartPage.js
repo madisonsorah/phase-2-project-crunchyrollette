@@ -18,9 +18,9 @@ function StartPage() {
                     <h2 className="startPageHeader">Which Anime Series Should I Start Next?</h2>
                     <p className="startPageP">Can't decide on a series to start? Answer these six questions and we'll give you a personalized recommendation!</p>
                     <button onClick={handleClick} className="startPageButton">LET'S GO!</button>
-                </div>
-                <div>
-                    <img className="startPageImg" alt="Crunchyroll-Hime" src={CrunchyRollHime}></img>
+                    <div>
+                        <img className="startPageImg" alt="Crunchyroll-Hime" src={CrunchyRollHime}></img>
+                    </div>
                 </div>
             </div>
         )

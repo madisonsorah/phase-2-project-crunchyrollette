@@ -1,0 +1,64 @@
+{
+    "quiz": [
+      {
+        "id": 1,
+        "question": "What mood are you in right now?",
+        "sliceOfLife": "Chill",
+        "action": "Energized",
+        "thriller": "Restless",
+        "comedy": "Happy",
+        "fantasy": "Dreamy",
+        "romance": "Hopeful"
+      },
+      {
+        "id": 2,
+        "question": "Which of these snacks would you reach for first?",
+        "comedy": "Buttered popcorn",
+        "romance": "Ice cream pint",
+        "sliceOfLife": "Carrots and hummus",
+        "action": "Trail mix",
+        "fantasy": "Baked brie with crackers",
+        "thriller": "Potato chips"
+      },
+      {
+        "id": 3,
+        "question": "If you had to choose a spirit animal, which is most like you?",
+        "thriller": "Snake",
+        "action": "Wolf",
+        "romance": "Dog",
+        "sliceOfLife": "Cat",
+        "fantasy": "Bird",
+        "comedy": "Monkey"
+      },
+      {
+        "id": 4,
+        "question": "Which color speaks to you?",
+        "action": "Red",
+        "fantasy": "Green",
+        "thriller": "Purple",
+        "romance": "Pink",
+        "comedy": "Yellow",
+        "sliceOfLife": "Blue"
+      },
+      {
+        "id": 5,
+        "question": "What's your favorite genre?",
+        "romance": "Romance",
+        "sliceOfLife": "Slice of Life",
+        "fantasy": "Fantasy",
+        "thriller": "Thriller",
+        "comedy": "Comedy",
+        "action": "Action"
+      },
+      {
+        "id": 6,
+        "question": "When do you like watching series?",
+        "thriller": "At night",
+        "action": "In the morning",
+        "sliceOfLife": "Use it as background noise",
+        "romance": "During the day",
+        "fantasy": "While I'm traveling or commuting",
+        "comedy": "Anytime!"
+      }
+    ]
+    }

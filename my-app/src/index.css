@@ -18,7 +18,7 @@ body {
 }
 
 .mainNavDiv {
-  background-color: #FFF;
+  background-color: #23252b;
   padding-top: 10px;
   padding-bottom: 60px;
   border-bottom: 0.09rem solid #000;
@@ -57,7 +57,7 @@ body {
 
 a:link {
   font-family: "Helvetica Neue", Arial, sans-serif;
-  color: #000;
+  color: #FFF;
   font-size: medium;
   font-weight: 700;
   text-decoration: none;
@@ -65,7 +65,7 @@ a:link {
 
 a:visited {
   font-family: "Helvetica Neue", Arial, sans-serif;
-  color: #000;
+  color: #FFF;
   font-size: medium;
   font-weight: 700;
   text-decoration: none;
@@ -76,7 +76,7 @@ a:hover {
   font-size: medium;
   font-weight: 700;
   text-decoration: none;
-  color: #df6300
+  color: #f47521;
 }
 
 .navForm {
@@ -101,7 +101,7 @@ a:hover {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 15px;
-  background-color: rgb(48, 47, 47);
+  background-color: #000;
   color: #FFF;
 }
 

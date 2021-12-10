@@ -1,71 +1,50 @@
-import React from "react";
+import React, {useEffect} from "react";
 
-function QuizQuestions({question, setCheckedAnswer, checkedAnswer}) {
-    function handleAnswerA() {
-        setCheckedAnswer("answera")
+function QuizQuestions({question, setCheckedAnswer, checkedAnswer, answerTracker, setTrackedAnswers}) {
+    function handleSelection(cat) {
+        setCheckedAnswer(cat)
     }
 
-    function handleAnswerB() {
-        setCheckedAnswer("answerb")
-    }
+    // if (cat === "sliceOfLife") {
+    //     setTrackedAnswers((answerTracker) => answerTracker + 1)
+    // }
 
-    function handleAnswerC() {
-        setCheckedAnswer("answerc")
-    }
+    const cats = ["sliceOfLife", "action", "thriller", "fantasy", "romance", "comedy"];
 
-    function handleAnswerD() {
-        setCheckedAnswer("answerd")
-    }
-    
-    
+    // Found at https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
+    // function shuffleCats(cats) {
+    //     let currentIndex = cats.length, randomIndex;
+    //     // While there remain elements to shuffle...
+    //     while (currentIndex !== 0) {
+    //         // Pick a remaining element...
+    //         randomIndex = Math.floor(Math.random() * currentIndex);
+    //         currentIndex--;
+    //         // And swap it with the current element.
+    //         [cats[currentIndex], cats[randomIndex]] = [
+    //         cats[randomIndex], cats[currentIndex]];
+    //     }
+    //     return cats;
+    //     }
+
+    const renderedAnswers = cats.map((cat) => (
+        <li className="answerLi" key={question[cat]}>
+            <input 
+                className="answerCheck" 
+                type="checkbox" 
+                id={question.id}
+                value={question[cat]}
+                checked={checkedAnswer === cat ? true : false}
+                onChange={() => handleSelection(cat)}
+            ></input>
+            <label htmlFor={cat} className="quizAnswer">{question[cat]}</label>
+        </li> 
+    ))
+
     return (
         <div className="quizMainDiv">
             <div className="questionContainer">
                 <h3 className="quizQuestion">{question.question}</h3>
-                    <li className="answerLi">
-                        <input 
-                        className="answerCheck" 
-                        type="checkbox" 
-                        id="answera" 
-                        value={question.answera}
-                        checked={checkedAnswer === "answera" ? true : false}
-                        onChange={handleAnswerA}
-                        ></input>
-                        <label htmlFor="answera" className="quizAnswer">{question.answera}</label>
-                    </li>
-                    <li className="answerLi">
-                        <input 
-                        className="answerCheck" 
-                        type="checkbox" 
-                        id="answerb" 
-                        value={question.answerb}
-                        checked={checkedAnswer === "answerb" ? true : false}
-                        onChange={handleAnswerB}
-                        ></input>
-                        <label htmlFor="answerb" className="quizAnswer">{question.answerb}</label>
-                    </li>
-                    <li className="answerLi">
-                        <input 
-                        className="answerCheck" 
-                        type="checkbox" 
-                        id="answerc" 
-                        value={question.answerc}
-                        checked={checkedAnswer === "answerc" ? true : false}
-                        onChange={handleAnswerC}
-                        ></input>
-                        <label htmlFor="answerc" className="quizAnswer">{question.answerc}</label>
-                    </li>
-                    <li className="answerLi">
-                        <input 
-                        className="answerCheck" 
-                        type="checkbox" 
-                        id="answerd" 
-                        value={question.answerd}
-                        checked={checkedAnswer === "answerd" ? true : false}
-                        onChange={handleAnswerD}
-                        ></input>
-                        <label htmlFor="answerd" className="quizAnswer">{question.answerd}</label>
-                    </li>
+                {renderedAnswers}
             </div>
         </div>
     )

@@ -6,6 +6,7 @@ import QuizQuestions from "./QuizQuestions"
 function QuizContainer() {
     const [quiz, setQuiz] = useState([])
     const [checkedAnswer, setCheckedAnswer] = useState("");
+    const [answerTracker, setTrackedAnswers] = useState(0);
     // const [anime, setAnime] = useState([])
 
     useEffect(() => {
@@ -20,13 +21,15 @@ function QuizContainer() {
         key={question.id} 
         checkedAnswer={checkedAnswer} 
         setCheckedAnswer={setCheckedAnswer}
+        answerTracker={answerTracker}
+        setAnswerTracker={setTrackedAnswers}
         />
     ))
 
     // const renderedAnimeResult = 
 
     return (
-        <div className="quizMainDiv" style={{ backgroundImage: `url(${OrangeGradiant})`}}>
+        <div className="quizMainDiv" style={{ backgroundImage: `url(${OrangeGradiant})` }}>
             <div>
             {renderedQuestions}
             </div>
