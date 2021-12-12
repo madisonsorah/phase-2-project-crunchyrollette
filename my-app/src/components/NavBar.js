@@ -1,6 +1,6 @@
 import React from "react";
-import CrunchyrollLogo from '../images/CrunchyrollLogo.png'
-import StartPage from './StartPage'
+import CrunchyrollLogo from '../images/CrunchyrollLogo.png';
+import StartPage from './StartPage';
 
 function NavBar() {
     return (
@@ -12,22 +12,22 @@ function NavBar() {
             </div>
             <ul className="navUl">
                 <li className="navLi">
-                    <a href="https://www.crunchyroll.com/videos/anime">Shows</a>
+                    <a className="aNav" href="https://www.crunchyroll.com/videos/anime">Shows</a>
                 </li>
                 <li className="navLi">
-                    <a href="https://www.crunchyroll.com/comics/manga">Manga</a>
+                    <a className="aNav" href="https://www.crunchyroll.com/comics/manga">Manga</a>
                 </li>
                 <li className="navLi">
-                    <a href="https://www.crunchyroll.com/news">News</a>
+                    <a className="aNav" href="https://www.crunchyroll.com/news">News</a>
                 </li>
                 <li className="navLi">
-                    <a href="https://www.crunchyroll.com/games/index.html">Games</a>
+                    <a className="aNav" href="https://www.crunchyroll.com/games/index.html">Games</a>
                 </li>
                 <li className="navLi">
-                    <a href="https://store.crunchyroll.com/">Store</a>
+                    <a className="aNav" href="https://store.crunchyroll.com/">Store</a>
                 </li>
                 <li className="navLi">
-                    <a href={<StartPage />}>CrunchyRollette *NEW*</a>
+                    <a className="aNav" href={<StartPage />}>CrunchyRollette *NEW*</a>
                 </li>
             </ul>
             <div className="navFormDiv">

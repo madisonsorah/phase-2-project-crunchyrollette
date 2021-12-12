@@ -55,7 +55,7 @@ body {
   padding: 10px;
 }
 
-a:link {
+.aNav:link {
   font-family: "Helvetica Neue", Arial, sans-serif;
   color: #FFF;
   font-size: medium;
@@ -63,7 +63,7 @@ a:link {
   text-decoration: none;
 }
 
-a:visited {
+.aNav:visited {
   font-family: "Helvetica Neue", Arial, sans-serif;
   color: #FFF;
   font-size: medium;
@@ -71,7 +71,7 @@ a:visited {
   text-decoration: none;
 }
 
-a:hover {
+.aNav:hover {
   font-family: "Helvetica Neue", Arial, sans-serif;
   font-size: medium;
   font-weight: 700;
@@ -114,8 +114,8 @@ a:hover {
   padding: 70px 0;
   text-align: center;
   color: #000;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   background-size: 3000px;
   background-repeat: no-repeat;
 }
@@ -235,4 +235,65 @@ a:hover {
 .submitQuizButton:hover {
   color:rgb(48, 47, 47);
   background-color: #FFF;
+}
+
+.animeResultMainDiv {
+  padding: 70px 0;
+  text-align: center;
+  color: #000;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-size: 3000px;
+  background-repeat: no-repeat;
+}
+
+.animeResultContainer {
+  background-color: #fff;
+  text-align: center;
+  width: 600px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: auto;
+  box-shadow: 0 8px 16px 0 #964300;
+}
+
+.animeHeader {
+  font-family: Nutmeg, sans-serif;
+}
+
+.animeImg {
+  margin: auto;
+  padding: 10px;
+  width: 500px;
+  height: 300px;
+}
+
+.animeP {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  padding:15px;
+}
+
+
+.aAnime:link {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  color: #000;
+  font-size: medium;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.aAnime:visited {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  color: #000;
+  font-size: medium;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.aAnime:hover {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: medium;
+  font-weight: 700;
+  text-decoration: none;
+  color: #f47521;
 }

@@ -1,20 +1,19 @@
 import React, {useState, useEffect} from "react";
-import OrangeGradiant from "../images/OrangeGradiant.jpg"
-import QuizQuestions from "./QuizQuestions"
-import AnimeResult from './AnimeResult'
+import OrangeGradiant from "../images/OrangeGradiant.jpg";
+import QuizQuestions from "./QuizQuestions";
+import AnimeResult from './AnimeResult';
 
 function QuizContainer() {
     const [quiz, setQuiz] = useState([])
     const [trackedAnswers, setTrackedAnswers] = useState({});
     const [isSubmitted, setSubmitted] = useState(false);
-    // const [categoryCount, setCategoryCount] = useState({});
-    // const [anime, setAnime] = useState([])
+    const [animeResult, setAnimeResult] = useState("")
 
     useEffect(() => {
     fetch('http://localhost:8000/quiz')
         .then((response) => response.json())
         .then((quizData) => setQuiz(quizData))
-    }, [])
+    }, []);
 
     const renderedQuestions = quiz.map((question) => (
         <QuizQuestions 
@@ -23,7 +22,7 @@ function QuizContainer() {
         trackedAnswers={trackedAnswers}
         setTrackedAnswers={setTrackedAnswers}
         />
-    ))
+    ));
 
     const categoryCount = {
         action: 0,
@@ -50,32 +49,41 @@ function QuizContainer() {
            } else if (trackedAnswers[id] === "thriller") {
                 categoryCount.thriller = categoryCount.thriller + 1;
            } 
-           setSubmitted((isSubmitted) => !isSubmitted)
-           console.log(categoryCount);
-       }
+       };
+       
+       let count = 0; 
+       let winningCategory;
+
+       for (let category in categoryCount) {
+           if (categoryCount[category] > count) {
+               count = categoryCount[category];
+               winningCategory = category;
+           } 
+       };
+
+       setAnimeResult(winningCategory);
+       setSubmitted((isSubmitted) => !isSubmitted);
    }
 
-//    function handleCategories() {
-//        for (let id in trackedAnswers) {
-//            const answer = trackedAnswers[id];
-//            categoryCount[answer] = categoryCount[answer] + 1;
-//        }
-//    }
    if (isSubmitted) {
-    return (
-        <div className="quizMainDiv" style={{ backgroundImage: `url(${OrangeGradiant})` }}>
-            <form onSubmit={handleCategories}>
-                 <div>
-                    {renderedQuestions}
-                </div>
-                 <div className="submitButtonDiv">
-                    <button className="submitQuizButton">GET MY ANIME RECOMMENDATION!</button>
-                </div>
-            </form>
-        </div>
-    )
-   } else {
-       return <AnimeResult />
+       return (
+            <div>
+                <AnimeResult animeResult={animeResult} />
+            </div>
+        )
+    } else {
+       return (
+            <div className="quizMainDiv" style={{ backgroundImage: `url(${OrangeGradiant})` }}>
+                <form onSubmit={handleCategories}>
+                    <div>
+                        {renderedQuestions}
+                    </div>
+                    <div className="submitButtonDiv">
+                        <button className="submitQuizButton">GET MY ANIME RECOMMENDATION!</button>
+                    </div>
+                </form>
+            </div>
+       )
    }
 }
 

@@ -6,13 +6,8 @@ function QuizQuestions({question, trackedAnswers, setTrackedAnswers}) {
             const newTrackedAnswers = {...trackedAnswers};
             newTrackedAnswers[question.id] = cat;
             return newTrackedAnswers;
-        })
-    }
-
-    // {
-    //     1: "action",
-    //     2: "fantasy"
-    // }
+        });
+    };
 
     const cats = ["sliceOfLife", "action", "thriller", "fantasy", "romance", "comedy"];
 
@@ -29,7 +24,7 @@ function QuizQuestions({question, trackedAnswers, setTrackedAnswers}) {
     //         cats[randomIndex], cats[currentIndex]];
     //     }
     //     return cats;
-    //     }e
+    //     }
 
     const renderedAnswers = cats.map((cat) => (
         <li className="answerLi" key={question[cat]}>
@@ -38,11 +33,11 @@ function QuizQuestions({question, trackedAnswers, setTrackedAnswers}) {
                 type="checkbox" 
                 value={question[cat]}
                 checked={trackedAnswers[question.id] === cat ? true : false}
-                onChange={() => handleSelection(cat)}
-            ></input>
+                onChange={() => handleSelection(cat)}>
+                </input>
             <label htmlFor={cat} className="quizAnswer">{question[cat]}</label>
         </li> 
-    ))
+    ));
 
     return (
         <div className="quizMainDiv">

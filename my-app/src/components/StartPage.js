@@ -5,9 +5,10 @@ import OrangeGradiant from "../images/OrangeGradiant.jpg"
 
 function StartPage() {
     const [isStarted, setStart] = useState(false);
+    
     function handleClick() {
-        setStart((isStarted) => !isStarted)
-    }
+        setStart((isStarted) => !isStarted);
+    };
     
     if (isStarted) {
         return <QuizContainer />
@@ -24,7 +25,7 @@ function StartPage() {
                 </div>
             </div>
         )
-}
+    }
 }
 
 export default StartPage;
