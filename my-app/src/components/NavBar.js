@@ -1,5 +1,6 @@
 import React from "react";
 import CrunchyrollLogo from '../images/CrunchyrollLogo.png';
+import ProfilePage from './ProfilePage'
 import StartPage from './StartPage';
 
 function NavBar() {
@@ -28,6 +29,11 @@ function NavBar() {
                 </li>
                 <li className="navLi">
                     <a className="aNav" href={<StartPage />}>CrunchyRollette *NEW*</a>
+                </li>
+                <li className="navLi">
+                    <a href={<ProfilePage />}>
+                        <img alt="Profile Page" src="" ></img>
+                    </a>
                 </li>
             </ul>
             <div className="navFormDiv">

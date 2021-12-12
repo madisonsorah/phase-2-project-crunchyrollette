@@ -297,3 +297,14 @@ body {
   text-decoration: none;
   color: #f47521;
 }
+
+.animeLi {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  list-style-type: none;
+  padding: 3px;
+}
+
+.animeLi2 {
+  list-style-type: none;
+  padding-bottom: 20px;
+}

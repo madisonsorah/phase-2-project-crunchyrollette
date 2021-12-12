@@ -4,7 +4,7 @@ function Header() {
     return (
         <div>
             <div className="headerDiv">
-                <h1 className="header">CrunchyRollette</h1>
+                <h1 className="header">crunchyrollette</h1>
             </div>
         </div>
     )

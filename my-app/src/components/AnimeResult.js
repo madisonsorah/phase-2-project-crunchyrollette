@@ -1,4 +1,6 @@
 import React, {useState, useEffect} from "react";
+import QuizContainer from "./QuizContainer";
+import WatchList from "./WatchList";
 import OrangeGradiant from "../images/OrangeGradiant.jpg";
 
 function AnimeResult({animeResult}) {
@@ -18,7 +20,12 @@ function AnimeResult({animeResult}) {
                     <h1 className="animeHeader">{anime.title}</h1>
                     <img className="animeImg" alt="Anime scene" src={anime.url}></img>
                     <p className="animeP">{anime.description}</p>
-                    <a href={anime.episodes} className="aAnime">Click here to watch!</a>
+                    <li className="animeLi">
+                        <a className="aAnime" href={<WatchList />}>Add to your watch list</a> or <a href={anime.episodes} className="aAnime">click here to watch now!</a>
+                    </li>
+                    <li className="animeLi2">
+                        <a href={<QuizContainer />} className="aAnime">Retake crunchyrollette Quiz</a>
+                    </li>
                 </div>
             </div>
             );
