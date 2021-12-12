@@ -1,12 +1,17 @@
 import React, {useEffect} from "react";
 
-function QuizQuestions({question, setCheckedAnswer, checkedAnswer, answerTracker, setTrackedAnswers}) {
+function QuizQuestions({question, trackedAnswers, setTrackedAnswers}) {
     function handleSelection(cat) {
-        setCheckedAnswer(cat)
+        setTrackedAnswers((trackedAnswers) => {
+            const newTrackedAnswers = {...trackedAnswers};
+            newTrackedAnswers[question.id] = cat;
+            return newTrackedAnswers;
+        })
     }
 
-    // if (cat === "sliceOfLife") {
-    //     setTrackedAnswers((answerTracker) => answerTracker + 1)
+    // {
+    //     1: "action",
+    //     2: "fantasy"
     // }
 
     const cats = ["sliceOfLife", "action", "thriller", "fantasy", "romance", "comedy"];
@@ -24,16 +29,15 @@ function QuizQuestions({question, setCheckedAnswer, checkedAnswer, answerTracker
     //         cats[randomIndex], cats[currentIndex]];
     //     }
     //     return cats;
-    //     }
+    //     }e
 
     const renderedAnswers = cats.map((cat) => (
         <li className="answerLi" key={question[cat]}>
             <input 
                 className="answerCheck" 
                 type="checkbox" 
-                id={question.id}
                 value={question[cat]}
-                checked={checkedAnswer === cat ? true : false}
+                checked={trackedAnswers[question.id] === cat ? true : false}
                 onChange={() => handleSelection(cat)}
             ></input>
             <label htmlFor={cat} className="quizAnswer">{question[cat]}</label>
