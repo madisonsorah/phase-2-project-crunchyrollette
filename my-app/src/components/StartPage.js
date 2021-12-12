@@ -1,31 +1,28 @@
-import React, {useState} from "react";
-import QuizContainer from "./QuizContainer"
+import React from "react";
+import { Link } from "react-router-dom";
 import CrunchyRollHime from "../images/CrunchyrollHime.png"
-import OrangeGradiant from "../images/OrangeGradiant.jpg"
+import NavBar from './NavBar'
 
 function StartPage() {
-    const [isStarted, setStart] = useState(false);
-    
-    function handleClick() {
-        setStart((isStarted) => !isStarted);
-    };
-    
-    if (isStarted) {
-        return <QuizContainer />
-    } else {
-        return (
-        <div className="startPageMainDiv" style={{ backgroundImage: `url(${OrangeGradiant})` }}>
-                <div className="startContainer">
-                    <h2 className="startPageHeader">Which Anime Series Should I Start Next?</h2>
-                    <p className="startPageP">Can't decide on a series to start? Answer these six questions and we'll give you a personalized recommendation!</p>
-                    <button onClick={handleClick} className="startPageButton">LET'S GO!</button>
+    return (
+    <div>
+        <NavBar />
+        <div className="startPageMainDiv">
+            <div className="float-container">
+                <div className="float-child1">
                     <div>
-                        <img className="startPageImg" alt="Crunchyroll-Hime" src={CrunchyRollHime}></img>
+                        <h1 className="startPageHeader">Which Anime Series Should You Start Next?</h1>
+                        <p className="startPageP">Take our crunchyrollette quiz! Can't decide on a new series to watch? Answer these six questions and we'll give you a personalized recommendation.</p>
+                        <Link to="/crunchyrollette"><button className="startPageButton">LET'S GO!</button></Link>
                     </div>
                 </div>
+                <div>
+                    <img className="Hime" alt="Crunchyroll-Hime" src={CrunchyRollHime}></img>
+                </div>
             </div>
-        )
-    }
+        </div>
+    </div>
+    )
 }
 
 export default StartPage;

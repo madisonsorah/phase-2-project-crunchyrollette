@@ -15,7 +15,18 @@ code {
 body {
   margin: auto;
   user-select: none;
+  background-image:url('images/OrangeGradiant.jpg');
+  background-size: 2000px;
+  background-repeat: no-repeat;
 }
+
+/* body :not(#unblurred) {
+  -webkit-filter: blur(2px);
+  -moz-filter: blur(2px);
+  -o-filter: blur(2px);
+  -ms-filter: blur(2px);
+  filter: blur(2px);    
+  } */
 
 .mainNavDiv {
   background-color: #23252b;
@@ -58,7 +69,7 @@ body {
 .aNav:link {
   font-family: "Helvetica Neue", Arial, sans-serif;
   color: #FFF;
-  font-size: medium;
+  font-size: small;
   font-weight: 700;
   text-decoration: none;
 }
@@ -66,14 +77,14 @@ body {
 .aNav:visited {
   font-family: "Helvetica Neue", Arial, sans-serif;
   color: #FFF;
-  font-size: medium;
+  font-size: small;
   font-weight: 700;
   text-decoration: none;
 }
 
 .aNav:hover {
   font-family: "Helvetica Neue", Arial, sans-serif;
-  font-size: medium;
+  font-size: small;
   font-weight: 700;
   text-decoration: none;
   color: #f47521;
@@ -111,55 +122,69 @@ body {
 }
 
 .startPageMainDiv {
-  padding: 70px 0;
-  text-align: center;
-  color: #000;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  background-size: 3000px;
-  background-repeat: no-repeat;
+  margin: auto;
 }
 
-.startContainer {
-  background-color: #fff;
-  text-align: center;
-  width: 600px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  margin: auto;
-  box-shadow: 0 8px 16px 0 #964300;
+.float-container {
+  padding: 20px;
+}
+
+.float-child1 {
+  color: #FFF;
+  width: 50%;
+  float: left;
+  padding-top: 75px;
+  padding-left: 100px;
+}  
+
+.imgWrapper {
+  float:right;
+}
+
+.startLi {
+  display: inline;
+  list-style-type: none;
 }
 
 .startPageHeader {
   font-family: Nutmeg, sans-serif;
+  font-size: 50px;
 }
 
-.startPageImg {
-  margin: auto;
-  padding: 20px;
-  width: 400px;
-  height: 400px;
+.Hime {
+  padding-top: 50px;
+  width: 525px;
+  height: 525px;
 }
 
 .startPageP {
   font-family: "Helvetica Neue", Arial, sans-serif;
-  padding:15px;
+  padding:5px;
+  padding-bottom: 20px;
+  font-size:18px;
+}
+
+.bold {
+  font-weight: 700;
 }
 
 .startPageButton {
   font-family: Nutmeg, sans-serif;
   margin: auto;
-  font-size: large;
+  font-size: 15px;
   font-weight: 600;
   color:#FFF;
-  background-color:rgb(48, 47, 47);
-  border: 0.09rem solid #FFF;
-  padding: 5px;
+  background-color:#23252b;
+  border: 0.09rem solid #23252b;
+  border-radius: 12px;
+  padding: 20px;
 }
 
 .startPageButton:hover {
-  color:rgb(48, 47, 47);
+  color:#23252b;
   background-color: #FFF;
+  border: 0.09rem solid #FFF;
+  box-shadow: 3px 3px #23252b, 1em 0 .8em #f47521;
 }
 
 .submitButtonDiv {
@@ -181,21 +206,29 @@ body {
   width: 600px;
   padding-bottom: 20px;
   margin: auto;
+  border-radius: 12px;
   box-shadow: 0 8px 16px 0 #964300;
+}
+
+.questionContainer:hover {
+  box-shadow: 3px 3px #23252b, 1em 0 .8em #964300;
 }
 
 .quizQuestion {
   font-family: Nutmeg, sans-serif;
   color: #FFF;
-  background-color: #000;
+  background-color: #23252b;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
   padding: 10px;
 }
 
 .quizAnswer {
   font-family: "Helvetica Neue", Arial, sans-serif;
   font-size: medium;
+  font-weight: 400;
   padding:5px;
-  color: #000;
+  color: #23252b;
   background-color:#FFF;
 }
 
@@ -210,15 +243,19 @@ body {
   background-color: white;
   border-radius: 50%;
   vertical-align: middle;
-  border: 1px solid rgb(48, 47, 47);
+  border: 1px solid #23252b;
   appearance: none;
   -webkit-appearance: none;
   outline: none;
   cursor: pointer;
 }
 
+.answerCheck:hover {
+  border: 2px solid #23252b;
+}
+
 .answerCheck:checked {
-    background-color: rgb(48, 47, 47);
+    background-color: #23252b;
 }
 
 .submitQuizButton {
@@ -227,30 +264,30 @@ body {
   font-size: large;
   font-weight: 600;
   color:#FFF;
-  background-color:rgb(48, 47, 47);
-  border: 0.09rem solid #FFF;
-  padding: 5px;
+  background-color:#23252b;
+  border: 0.09rem solid #23252b;
+  border-radius: 10px;
+  padding: 10px;
 }
 
 .submitQuizButton:hover {
-  color:rgb(48, 47, 47);
+  color:#23252b;
   background-color: #FFF;
+  border: 0.09rem solid #FFF;
+  box-shadow: 3px 3px #23252b, 1em 0 .8em #964300;
 }
 
 .animeResultMainDiv {
-  padding: 70px 0;
+  margin:auto;
   text-align: center;
-  color: #000;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  background-size: 3000px;
-  background-repeat: no-repeat;
+  color: #FFF;
 }
 
 .animeResultContainer {
-  background-color: #fff;
+  background-color: #23252b;
   text-align: center;
-  width: 600px;
+  width: 1000px;
+  height: 720px;
   padding-top: 10px;
   padding-bottom: 10px;
   margin: auto;
@@ -276,7 +313,7 @@ body {
 
 .aAnime:link {
   font-family: "Helvetica Neue", Arial, sans-serif;
-  color: #000;
+  color: #FFF;
   font-size: medium;
   font-weight: 700;
   text-decoration: none;
@@ -284,7 +321,7 @@ body {
 
 .aAnime:visited {
   font-family: "Helvetica Neue", Arial, sans-serif;
-  color: #000;
+  color: #FFF;
   font-size: medium;
   font-weight: 700;
   text-decoration: none;
@@ -301,10 +338,66 @@ body {
 .animeLi {
   font-family: "Helvetica Neue", Arial, sans-serif;
   list-style-type: none;
-  padding: 3px;
+  padding: 7px;
 }
 
 .animeLi2 {
   list-style-type: none;
   padding-bottom: 20px;
+}
+
+.watchListImg {
+  margin: auto;
+  padding: 5px;
+  width: 350px;
+  height: 200px
+}
+
+.watchListHeader {
+  font-family: Nutmeg, sans-serif;
+  font-size: 50px;
+}
+
+.watchListP {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  padding:5px;
+  padding-bottom: 20px;
+  font-size:18px;
+}
+
+.watchListAnime {
+  font-family: Nutmeg, sans-serif;
+  color:#FFF;
+  padding:5px;
+}
+
+.watchListButton {
+  font-family: Nutmeg, sans-serif;
+  margin: auto;
+  font-size: small;
+  font-weight: 600;
+  color:#f47521;
+  background-color:#23252b;
+  border: 0.09rem solid #f47521;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.watchListContainer {
+  background-color: #23252b;
+  color:#FFF;
+  margin: auto;
+  padding-left: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: auto;
+}
+
+.watchListAnimeDiv {
+  padding: 20px;
+}
+
+.animeUl {
+  list-style-type: none;
+  float: left;
 }

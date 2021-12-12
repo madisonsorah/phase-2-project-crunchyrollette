@@ -1,12 +1,27 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './index.css';
 import App from './App';
+import StartPage from './components/StartPage'
+import QuizContainer from './components/QuizContainer'
+import AnimeResult from './components/AnimeResult'
+import WatchList from './components/WatchList'
+import ProfilePage from './components/ProfilePage'
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<App />} />
+        <Route path="startpage" element={<StartPage />} />
+        <Route path="watchlist" element={<WatchList />} />
+        <Route path="profile" element={<ProfilePage />} />
+        <Route path="crunchyrollette" element={<QuizContainer />} />
+        <Route path="animeresult" element={<AnimeResult />} />
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );

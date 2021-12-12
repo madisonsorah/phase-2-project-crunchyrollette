@@ -1,13 +1,14 @@
 import React, {useState, useEffect} from "react";
 import OrangeGradiant from "../images/OrangeGradiant.jpg";
+import NavBar from './NavBar'
+import AnimeResult from './AnimeResult'
 import QuizQuestions from "./QuizQuestions";
-import AnimeResult from './AnimeResult';
 
 function QuizContainer() {
     const [quiz, setQuiz] = useState([])
     const [trackedAnswers, setTrackedAnswers] = useState({});
-    const [isSubmitted, setSubmitted] = useState(false);
     const [animeResult, setAnimeResult] = useState("")
+    const [isSubmitted, setSubmitted] = useState(false)
 
     useEffect(() => {
     fetch('http://localhost:8000/quiz')
@@ -66,13 +67,16 @@ function QuizContainer() {
    }
 
    if (isSubmitted) {
-       return (
+        return (
             <div>
+                <NavBar />
                 <AnimeResult animeResult={animeResult} />
             </div>
         )
-    } else {
-       return (
+   } else {
+    return (
+        <div>
+            <NavBar />
             <div className="quizMainDiv" style={{ backgroundImage: `url(${OrangeGradiant})` }}>
                 <form onSubmit={handleCategories}>
                     <div>
@@ -83,6 +87,7 @@ function QuizContainer() {
                     </div>
                 </form>
             </div>
+        </div>
        )
    }
 }

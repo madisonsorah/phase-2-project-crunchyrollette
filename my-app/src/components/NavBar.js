@@ -1,7 +1,6 @@
 import React from "react";
 import CrunchyrollLogo from '../images/CrunchyrollLogo.png';
-import ProfilePage from './ProfilePage'
-import StartPage from './StartPage';
+import { Link } from "react-router-dom";
 
 function NavBar() {
     return (
@@ -28,12 +27,10 @@ function NavBar() {
                     <a className="aNav" href="https://store.crunchyroll.com/">Store</a>
                 </li>
                 <li className="navLi">
-                    <a className="aNav" href={<StartPage />}>CrunchyRollette *NEW*</a>
+                    <Link className="aNav" to="/startpage">crunchyrollette Quiz *NEW*</Link>
                 </li>
                 <li className="navLi">
-                    <a href={<ProfilePage />}>
-                        <img alt="Profile Page" src="" ></img>
-                    </a>
+                    <Link className="aNav" to="/profile">Account</Link>
                 </li>
             </ul>
             <div className="navFormDiv">
