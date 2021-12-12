@@ -29,9 +29,6 @@ function NavBar() {
                 <li className="navLi">
                     <Link className="aNav" to="/startpage">crunchyrollette Quiz *NEW*</Link>
                 </li>
-                <li className="navLi">
-                    <Link className="aNav" to="/profile">Account</Link>
-                </li>
             </ul>
             <div className="navFormDiv">
                 <form className="navForm">

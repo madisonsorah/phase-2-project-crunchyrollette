@@ -350,7 +350,46 @@ body {
   margin: auto;
   padding: 5px;
   width: 350px;
-  height: 200px
+  height: 200px;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  display: block;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  display:block;
+  text-align:center;
+  top: 50%;
+  left: 17.5%;
+  position:absolute;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.container:link {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  color: #FFF;
+  font-size: medium;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.container:visited {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  color: #FFF;
+  font-size: medium;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.container:hover .watchListImg {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
 }
 
 .watchListHeader {
@@ -390,14 +429,20 @@ body {
   padding-left: 50px;
   padding-top: 10px;
   padding-bottom: 10px;
-  margin: auto;
+  height: 800px;
+  overflow: scroll;
 }
 
 .watchListAnimeDiv {
   padding: 20px;
+  display:inline-block;
 }
 
 .animeUl {
   list-style-type: none;
   float: left;
+}
+
+.animeLi {
+  display: inline;
 }
