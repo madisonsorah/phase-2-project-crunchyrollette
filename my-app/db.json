@@ -2,7 +2,7 @@
   "quiz": [
     {
       "id": 1,
-      "question": "What mood are you in right now?",
+      "question": "How is your mood today?",
       "sliceOfLife": "Chill",
       "action": "Energized",
       "thriller": "Restless",
@@ -42,7 +42,7 @@
     },
     {
       "id": 5,
-      "question": "What's your favorite genre?",
+      "question": "What is your favorite genre?",
       "romance": "Romance",
       "sliceOfLife": "Slice of Life",
       "fantasy": "Fantasy",
@@ -52,10 +52,10 @@
     },
     {
       "id": 6,
-      "question": "When do you like watching series?",
+      "question": "When do you prefer to watch anime series?",
       "thriller": "At night",
       "action": "In the morning",
-      "sliceOfLife": "Use it as background noise",
+      "sliceOfLife": "Background noise",
       "romance": "During the day",
       "fantasy": "While I'm traveling or commuting",
       "comedy": "Anytime!"

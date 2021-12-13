@@ -85,15 +85,43 @@ body {
 .profileImage {
   display: inline;
   float: right;
-  padding: 5px;
-  padding-right:20px;
+  padding-right:10px;
   width:50px;
   height:50px;
+  z-index: 9;
+}
+
+
+.dropDown {
+  margin-top:10px;
+  background-color: #23252b;
+  width: 200px;
+  height: 162px;
+  float: right;
+  top: 60px;
+  z-index: 9;
+  position: fixed;
+  margin-left:1250px;
+  box-shadow: 10px 0 5px -2px #35383f;
+}
+
+.dropdownLi {
+  list-style-type: none;
+  padding: 10px;
+  font-family: Lato,Helvetica Neue,helvetica,sans-serif;
+  font-size:medium;
+  font-weight:500;
+  color:#FFF;
+  border-bottom: 0.09rem solid #000;
+}
+
+.dropdownLi:hover {
+  color: #f47521;
 }
 
 .loginGreeting {
-  float:right;
   display:inline;
+  margin-left:580px;
   font-family: Lato,Helvetica Neue,helvetica,sans-serif;
   color: #FFF;
   font-size: small;
@@ -190,8 +218,25 @@ body {
 .popularNowLi {
   display: inline-block;
   padding-top: 20px;
-  padding-right:30px;
+  padding-right:10px;
   padding-bottom:20px;
+}
+
+.popularNowMore {
+  display: inline-block;
+  padding-top: 20px;
+  padding-left:30px;
+  padding-bottom:20px;
+}
+
+.seeMore {
+  text-decoration: none;
+}
+
+.logoImg {
+  width: 70px;
+  height: 40px;
+  padding-bottom: 60px;
 }
 
 .popularNowImg {
@@ -229,64 +274,66 @@ body {
   line-height:3em;
   overflow:scroll;
   padding:5px;
+  position: sticky;
 }
 
 .questionContainer {
-  background-color: #FFF;
   text-align: center;
   width: 600px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   margin: auto;
   border-radius: 12px;
-  box-shadow: 0 8px 16px 0 #964300;
+  background-color: #c45f1c;
+  filter: alpha(opacity=60);
+  opacity: 0.5;
 }
 
 .questionContainer:hover {
-  box-shadow: 3px 3px #23252b, 1em 0 .8em #964300;
+  box-shadow: 3px 3px #9b4a14;
 }
 
 .quizQuestion {
   font-family: Lato,Helvetica Neue,helvetica,sans-serif;
   color: #FFF;
-  background-color: #23252b;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  padding: 20px;
+  padding-top: 20px;
 }
 
 .quizAnswer {
   font-family: "Helvetica Neue", Arial, sans-serif;
   font-size: medium;
   font-weight: 700;
-  padding:5px;
-  color: #23252b;
-  background-color:#FFF;
+  padding: 5px;
+  color: #FFF;
+  filter: alpha(opacity=60);
+  opacity: 0.9;
 }
 
 .answerLi {
   list-style-type: none;
-  padding: 3px;
 }
 
 .answerCheck {
   width: 1em;
   height: 1em;
-  background-color: white;
   border-radius: 50%;
   vertical-align: middle;
-  border: 1px solid #23252b;
+  border: 1px solid #FFF;
   appearance: none;
   -webkit-appearance: none;
   outline: none;
   cursor: pointer;
+  filter: alpha(opacity=60);
+  opacity: 0.6;
 } 
 
 .answerCheck:hover {
-  border: 2px solid #23252b;
+  border: 2px solid #FFF;
 }
 
 .answerCheck:checked {
-    background-color: #23252b;
+    background-color: #FFF;
 }
 
 .submitQuizButton {
@@ -294,23 +341,19 @@ body {
   text-align: center;
   z-index: 9;
   position:fixed;
-  top: 250px;
+  top: 230px;
   margin: auto;
-  margin-left:-260px;
+  margin-left:-230px;
   font-size: large;
   font-weight: 600;
-  color:#FFF;
-  background-color:#23252b;
-  border: 0.09rem solid #23252b;
+  color:#f47521;
+  background-color:#FFF;
+  border: 0.09rem solid #FFF;
   border-radius: 10px;
   padding: 80px;
 }
 
 .submitQuizButton:hover {
-  color:#FFF;
-  background-color:#23252b;
-  border: 0.09rem solid #23252b;
-  box-shadow: 0 10px 6px -6px #777;
   animation: jitter 200ms linear infinite; display:inline-block;
 }
 
@@ -323,11 +366,8 @@ body {
   height: 200px;
   padding:20px;
   padding-left: 110px;
+  padding-top:50px;
   display:flex;
-}
-
-.questionContainerBlurred {
-  backdrop-filter: blur(8px);
 }
 
 .animeResultMainDiv {
@@ -341,7 +381,7 @@ body {
   background-color: #000;
   text-align: center;
   width: 800px;
-  height: 780px;
+  height: 950px;
   padding-top: 10px;
   padding-bottom: 10px;
   margin: auto;
@@ -434,6 +474,8 @@ body {
 .animeLi2 {
   list-style-type: none;
   padding: 10px;
+  padding-top:20px;
+  padding-bottom:20px;
 }
 
 .watchListImg {
@@ -461,7 +503,7 @@ body {
   padding-bottom: 40px;
   font-size:18px;
   border-bottom: 0.09rem solid rgb(48, 48, 48);
-  width: 1000px;
+  width: 1300px;
 }
 
 .watchListStart {

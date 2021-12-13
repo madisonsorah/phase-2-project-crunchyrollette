@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import CrunchyRollHime from "../images/CrunchyrollHime.png"
+import CrunchyrollLogo from "../images/CrunchyrollLogo.png"
 import NavBar from './NavBar'
 
 function StartPage() {
@@ -44,6 +45,12 @@ function StartPage() {
                                 <img className= "popularNowImg" src="https://beta.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/aaeca3e651bebe79fe808085d079feea.jpeg" alt="JoJo"></img>
                             </a>
                             <p className="popularNowAnime">JoJo's Bizarre Adventure</p>
+                        </li>
+                        <li className="popularNowMore">
+                        <a href="https://beta.crunchyroll.com/videos/popular">
+                            <img className= "logoImg" src={CrunchyrollLogo} alt="logo"></img>
+                        </a>
+                        <a className="seeMore" href="https://beta.crunchyroll.com/videos/popular"><p className="popularNowAnime">More..</p></a>
                         </li>
                     </ul>
             </div>

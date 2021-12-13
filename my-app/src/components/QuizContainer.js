@@ -1,5 +1,4 @@
 import React, {useState, useEffect} from "react";
-import OrangeGradiant from "../images/OrangeGradiant.jpg";
 import ChibiHime from "../images/ChibiHime.png"
 import NavBar from './NavBar'
 import AnimeResult from './AnimeResult'
@@ -82,7 +81,7 @@ function QuizContainer() {
         return (
             <div>
                 <NavBar />
-                <div className="quizMainDiv" style={{ backgroundImage: `url(${OrangeGradiant})` }}>
+                <div className="quizMainDiv">
                     <form onSubmit={handleCategories}>
                         <div className="quizScroll">
                             {renderedQuestions}
@@ -98,7 +97,7 @@ function QuizContainer() {
         return (
             <div>
                 <NavBar />
-                <div className="quizMainDiv" style={{ backgroundImage: `url(${OrangeGradiant})` }}>
+                <div className="quizMainDiv">
                     <form onSubmit={handleCategories}>
                         <div className="quizScroll">
                             {renderedQuestions}

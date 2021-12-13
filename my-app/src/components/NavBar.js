@@ -1,9 +1,15 @@
-import React from "react";
+import React, {useState} from "react";
 import CrunchyrollNav from '../images/CrunchyrollNav.png';
 import ProfileImage from '../images/ProfileImage.png'
 import { Link } from "react-router-dom";
 
 function NavBar() {
+    const [clicked, setClicked] = useState(false);
+
+    function handleClick() {
+        setClicked((clicked) => !clicked)
+    }
+
     return (
         <div className="mainNavDiv">
             <div className="navImgDiv">
@@ -30,10 +36,15 @@ function NavBar() {
                 <li className="navLi">
                     <Link className="aNav" to="/startpage">crunchyrollette Quiz *NEW*</Link>
                 </li>
-                <li>
-                    <p className="loginGreeting">Hello, Madison!</p>
-                </li>
-                <Link to='/ProfilePage'><img className="profileImage" src={ProfileImage}></img></Link>
+                <p className="loginGreeting">Hello, Madison!</p>
+            </ul>
+            <img className="profileImage" onClick={handleClick} src={ProfileImage}></img>
+            <div>{clicked ? <div className="dropDown">
+                <li className="dropdownLi">Profile</li>
+                <li className="dropdownLi">Settings</li>
+                <Link to="/watchlist"><li className="dropdownLi">Watch List</li></Link>
+                <li className="dropdownLi" onClick={handleClick}>Close Menu</li>
+                </div> : ""}</div>
         </div>
     )
 }
