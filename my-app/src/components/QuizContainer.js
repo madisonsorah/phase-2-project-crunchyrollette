@@ -9,6 +9,7 @@ function QuizContainer() {
     const [trackedAnswers, setTrackedAnswers] = useState({});
     const [animeResult, setAnimeResult] = useState("")
     const [isSubmitted, setSubmitted] = useState(false)
+    const [clickCount, setClickCount] = useState(0)
 
     useEffect(() => {
     fetch('http://localhost:8000/quiz')
@@ -22,6 +23,8 @@ function QuizContainer() {
         key={question.id} 
         trackedAnswers={trackedAnswers}
         setTrackedAnswers={setTrackedAnswers}
+        clickCount={clickCount}
+        setClickCount={setClickCount}
         />
     ));
 
@@ -74,22 +77,37 @@ function QuizContainer() {
             </div>
         )
    } else {
-    return (
-        <div>
-            <NavBar />
-            <div className="quizMainDiv" style={{ backgroundImage: `url(${OrangeGradiant})` }}>
-                <form onSubmit={handleCategories}>
-                    <div>
-                        {renderedQuestions}
-                    </div>
-                    <div className="submitButtonDiv">
-                        <button className="submitQuizButton">GET MY ANIME RECOMMENDATION!</button>
-                    </div>
-                </form>
+    if (Object.keys(trackedAnswers).length === 6) {
+        return (
+            <div>
+                <NavBar />
+                <div className="quizMainDiv" style={{ backgroundImage: `url(${OrangeGradiant})` }}>
+                    <form onSubmit={handleCategories}>
+                        <div>
+                            {renderedQuestions}
+                            <div className="submitQuizButtonDiv">
+                                <button className="submitQuizButton">GET MY ANIME RECOMMENDATION!</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
-        </div>
-       )
-   }
+        )
+    } else {
+        return (
+            <div>
+                <NavBar />
+                <div className="quizMainDiv" style={{ backgroundImage: `url(${OrangeGradiant})` }}>
+                    <form onSubmit={handleCategories}>
+                        <div>
+                            {renderedQuestions}
+                        </div>
+                    </form>
+                </div>
+            </div>
+           )
+    }
+    }
 }
 
 export default QuizContainer;

@@ -1,5 +1,5 @@
 import React from "react";
-import CrunchyrollLogo from '../images/CrunchyrollLogo.png';
+import CrunchyrollNav from '../images/CrunchyrollNav.png';
 import { Link } from "react-router-dom";
 
 function NavBar() {
@@ -7,7 +7,7 @@ function NavBar() {
         <div className="mainNavDiv">
             <div className="navImgDiv">
                 <a href="https://www.crunchyroll.com/">
-                    <img alt="Crunchyroll Logo" className="navLogo" src={CrunchyrollLogo}></img>
+                    <img alt="Crunchyroll Logo" className="navLogo" src={CrunchyrollNav}></img>
                 </a>
             </div>
             <ul className="navUl">

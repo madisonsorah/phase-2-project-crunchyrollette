@@ -1,6 +1,6 @@
 import React, {useEffect} from "react";
 
-function QuizQuestions({question, trackedAnswers, setTrackedAnswers}) {
+function QuizQuestions({question, trackedAnswers, setTrackedAnswers, setClickCount, clickCount}) {
     function handleSelection(cat) {
         setTrackedAnswers((trackedAnswers) => {
             const newTrackedAnswers = {...trackedAnswers};

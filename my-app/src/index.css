@@ -20,14 +20,6 @@ body {
   background-repeat: no-repeat;
 }
 
-/* body :not(#unblurred) {
-  -webkit-filter: blur(2px);
-  -moz-filter: blur(2px);
-  -o-filter: blur(2px);
-  -ms-filter: blur(2px);
-  filter: blur(2px);    
-  } */
-
 .mainNavDiv {
   background-color: #23252b;
   padding-top: 10px;
@@ -260,7 +252,11 @@ body {
 
 .submitQuizButton {
   font-family: Nutmeg, sans-serif;
+  z-index: 9;
+  position:fixed;
+  top: 330px;
   margin: auto;
+  margin-left:-160px;
   font-size: large;
   font-weight: 600;
   color:#FFF;
