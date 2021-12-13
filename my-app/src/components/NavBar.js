@@ -1,5 +1,6 @@
 import React from "react";
 import CrunchyrollNav from '../images/CrunchyrollNav.png';
+import ProfileImage from '../images/ProfileImage.png'
 import { Link } from "react-router-dom";
 
 function NavBar() {
@@ -29,10 +30,10 @@ function NavBar() {
                 <li className="navLi">
                     <Link className="aNav" to="/startpage">crunchyrollette Quiz *NEW*</Link>
                 </li>
-            </ul>
-            <div className="profileDropdown">
-                <img src=""></img>
-            </div>
+                <li>
+                    <p className="loginGreeting">Hello, Madison!</p>
+                </li>
+                <Link to='/ProfilePage'><img className="profileImage" src={ProfileImage}></img></Link>
         </div>
     )
 }

@@ -82,22 +82,22 @@ body {
   color: #f47521;
 }
 
-.navForm {
+.profileImage {
   display: inline;
   float: right;
   padding: 5px;
+  padding-right:20px;
+  width:50px;
+  height:50px;
 }
 
-.navInput {
-  padding: 8px;
-  color:rgb(97, 97, 97);
-  background-color: #23252b;
-  border: 0.09rem solid rgb(190, 190, 190);
-}
-
-::placeholder {
-  opacity: 0.5;
-  color:rgb(190, 190, 190);
+.loginGreeting {
+  float:right;
+  display:inline;
+  font-family: Lato,Helvetica Neue,helvetica,sans-serif;
+  color: #FFF;
+  font-size: small;
+  font-weight: 700;
 }
 
 .startPageMainDiv {
