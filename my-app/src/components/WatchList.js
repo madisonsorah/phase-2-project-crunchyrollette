@@ -3,13 +3,13 @@ import NavBar from "./NavBar"
 
 function WatchList() {
     const [watchList, setWatchList] = useState([]);
-    const [search, setSearch] = useState("")
+    const [search, setSearch] = useState("");
 
     useEffect(() => {
         fetch('http://localhost:8000/savedAnime')
         .then((response) => response.json())
         .then((savedAnimeData) => setWatchList(savedAnimeData))
-    }, [])
+    }, []);
 
     const handleDelete = (id) => {
         let updatedWatchList = watchList.filter((series) => series.id !== id)
@@ -19,29 +19,29 @@ function WatchList() {
           method: "DELETE",
         }
         fetch(`http://localhost:8000/savedAnime/${id}`, config)
-      }
+      };
 
-    const filteredList = watchList.filter((series) => series.title.toLowerCase().includes(search.toLowerCase()))
+    const filteredList = watchList.filter((series) => series.title.toLowerCase().includes(search.toLowerCase()));
 
-      const renderedWatchList = filteredList.map((series) => {
-        return(
-        <div className="watchListAnimeDiv" key={series.id}>
-            <div>
-                <a href={series.episodes}>
-                    <img className="watchListImg" alt="anime scene" src={series.url}></img>
-                </a>
+    const renderedWatchList = filteredList.map((series) => {
+        return (
+            <div className="watchListAnimeDiv" key={series.id}>
+                <div>
+                    <a href={series.episodes}>
+                        <img className="watchListImg" alt="anime scene" src={series.url}></img>
+                    </a>
+                </div>
+                <h3 className="watchListAnime">{series.title}</h3>
+                <a href={series.episodes} className="aAnime"><button className="startWatchingButton">WATCH S1 E1</button></a> 
+                <button className="watchListButton" onClick={() => handleDelete(series.id)}>Remove from Watch List</button>
             </div>
-            <h3 className="watchListAnime">{series.title}</h3>
-            <a href={series.episodes} className="aAnime"><button className="startWatchingButton">WATCH S1 E1</button></a> 
-            <button className="watchListButton" onClick={() => handleDelete(series.id)}>Remove from Watch List</button>
-        </div>
-        )
-        })
+            )
+        });
     
     function handleSubmit(e) {
         e.preventDefault();
         setSearch(e.target.value);
-      }
+      };
     
     return (
         <div>
@@ -55,7 +55,8 @@ function WatchList() {
                     value={search} 
                     type="text" 
                     className="watchListInput" 
-                    placeholder="Anime Title.."></input>
+                    placeholder="Anime Title..">
+                    </input>
                 </form>
                 {renderedWatchList}
             </div>

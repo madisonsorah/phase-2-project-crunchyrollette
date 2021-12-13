@@ -8,7 +8,7 @@ function NavBar() {
 
     function handleClick() {
         setClicked((clicked) => !clicked)
-    }
+    };
 
     return (
         <div className="mainNavDiv">
@@ -39,12 +39,15 @@ function NavBar() {
                 <p className="loginGreeting">Hello, Madison!</p>
             </ul>
             <img className="profileImage" onClick={handleClick} src={ProfileImage}></img>
-            <div>{clicked ? <div className="dropDown">
-                <li className="dropdownLi">Profile</li>
-                <li className="dropdownLi">Settings</li>
-                <Link to="/watchlist"><li className="dropdownLi">Watch List</li></Link>
-                <li className="dropdownLi" onClick={handleClick}>Close Menu</li>
-                </div> : ""}</div>
+            <div>{clicked ? 
+                <div className="dropDown">
+                    <li className="dropdownLi">Profile</li>
+                    <li className="dropdownLi">Settings</li>
+                    <Link to="/watchlist"><li className="dropdownLi">Watch List</li></Link>
+                    <li className="dropdownLi" onClick={handleClick}>Close Menu</li>
+                </div> 
+                : ""}
+            </div>
         </div>
     )
 }

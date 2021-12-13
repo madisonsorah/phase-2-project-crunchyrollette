@@ -1,6 +1,6 @@
 import React, {useEffect} from "react";
 
-function QuizQuestions({question, trackedAnswers, setTrackedAnswers, setClickCount, clickCount}) {
+function QuizQuestions({question, trackedAnswers, setTrackedAnswers}) {
     function handleSelection(cat) {
         setTrackedAnswers((trackedAnswers) => {
             const newTrackedAnswers = {...trackedAnswers};
@@ -34,7 +34,7 @@ function QuizQuestions({question, trackedAnswers, setTrackedAnswers, setClickCou
                 value={question[cat]}
                 checked={trackedAnswers[question.id] === cat ? true : false}
                 onChange={() => handleSelection(cat)}>
-                </input>
+            </input>
             <label htmlFor={cat} className="quizAnswer">{question[cat]}</label>
         </li> 
     ));

@@ -1,21 +1,7 @@
-/* body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-} */
-
 body {
   margin: auto;
   user-select: none;
-  background-image:url('images/OrangeGradiant.jpg');
+  background-image: url('images/OrangeGradiant.jpg');
   background-size: 2000px;
   background-repeat: no-repeat;
 }
@@ -31,7 +17,7 @@ body {
 }
 
 .navLogo {
-  width: 135px;
+  width: 145px;
   height: 27px;
 }
 
@@ -61,39 +47,45 @@ body {
 .aNav:link {
   font-family: Lato,Helvetica Neue,helvetica,sans-serif;
   color: #FFF;
-  font-size: small;
-  font-weight: 700;
+  font-size: medium;
+  font-weight: 400;
   text-decoration: none;
 }
 
 .aNav:visited {
   font-family: Lato,Helvetica Neue,helvetica,sans-serif;
   color: #FFF;
-  font-size: small;
-  font-weight: 700;
+  font-size: medium;
+  font-weight: 400;
   text-decoration: none;
 }
 
 .aNav:hover {
   font-family: Lato,Helvetica Neue,helvetica,sans-serif;
-  font-size: small;
-  font-weight: 700;
+  font-size: medium;
+  font-weight: 400;
   text-decoration: none;
   color: #f47521;
+  box-sizing: border-box;
 }
 
 .profileImage {
   display: inline;
   float: right;
-  padding-right:10px;
-  width:50px;
-  height:50px;
+  padding-right: 10px;
+  width: 50px;
+  height: 50px;
   z-index: 9;
+  filter: brightness(85%)
+}
+
+.profileImage:hover {
+  filter: brightness(100%);
 }
 
 
 .dropDown {
-  margin-top:10px;
+  margin-top: 10px;
   background-color: #23252b;
   width: 200px;
   height: 162px;
@@ -101,7 +93,7 @@ body {
   top: 60px;
   z-index: 9;
   position: fixed;
-  margin-left:1250px;
+  margin-left: 1250px;
   box-shadow: 10px 0 5px -2px #35383f;
 }
 
@@ -109,9 +101,9 @@ body {
   list-style-type: none;
   padding: 10px;
   font-family: Lato,Helvetica Neue,helvetica,sans-serif;
-  font-size:medium;
-  font-weight:500;
-  color:#FFF;
+  font-size: medium;
+  font-weight: 400;
+  color: #FFF;
   border-bottom: 0.09rem solid #000;
 }
 
@@ -120,8 +112,8 @@ body {
 }
 
 .loginGreeting {
-  display:inline;
-  margin-left:580px;
+  display: inline;
+  margin-left: 525px;
   font-family: Lato,Helvetica Neue,helvetica,sans-serif;
   color: #FFF;
   font-size: small;
@@ -133,8 +125,8 @@ body {
 }
 
 .float-container {
-  margin:auto;
-  padding: 50px;
+  margin: auto;
+  padding: 30px;
 }
 
 .float-child1 {
@@ -142,11 +134,11 @@ body {
   width: 50%;
   float: left;
   padding-top: 75px;
-  padding-left: 100px;
+  padding-left: 105px;
 }  
 
 .imgWrapper {
-  float:right;
+  float: right;
 }
 
 .startLi {
@@ -158,19 +150,24 @@ body {
   font-family: Lato,Helvetica Neue,helvetica,sans-serif;
   font-size: 50px;
   padding: 10px;
-  padding-bottom:20px;
+  padding-bottom: 20px;
   border-bottom: 0.09rem solid #f47521;
+  text-shadow: 2px 2px #d46c27;
 }
 
 .Hime {
-  padding-top: 50px;
-  width: 525px;
-  height: 525px;  
+  padding-top: 30px;
+  width: 550px;
+  height: 550px;
+  padding-left: 30px;
 }
 
 .startPageP {
   font-family: "Helvetica Neue", Arial, sans-serif;
-  font-size:18px;
+  font-size: 18px;
+  font-weight: 250;
+  padding: 5px;
+  padding-bottom: 10px;
 }
 
 .bold {
@@ -182,18 +179,18 @@ body {
   margin: auto;
   font-size: 15px;
   font-weight: 600;
-  color:#FFF;
-  background-color:#23252b;
+  color: #FFF;
+  background-color: #23252b;
   border: 0.09rem solid #23252b;
-  border-radius: 12px;
   padding: 20px;
+  margin-left:5px;
 }
 
 .startPageButton:hover {
   color:#23252b;
   background-color: #FFF;
   border: 0.09rem solid #FFF;
-  box-shadow: 3px 3px #23252b, 1em 0 .8em #f47521;
+  box-shadow: 3px 3px #23252b;
 }
 
 .submitButtonDiv {
@@ -202,9 +199,9 @@ body {
 
 .popularNowText {
   font-family: Lato,Helvetica Neue,helvetica,sans-serif;
-  color:#FFF;
+  color: #FFF;
   border-bottom: 0.09rem solid #f47521;
-  padding:10px;
+  padding-bottom: 20px;
 }
 
 .popularNowUl {
@@ -218,15 +215,15 @@ body {
 .popularNowLi {
   display: inline-block;
   padding-top: 20px;
-  padding-right:10px;
-  padding-bottom:20px;
+  padding-right: 10px;
+  padding-bottom: 20px;
 }
 
 .popularNowMore {
   display: inline-block;
   padding-top: 20px;
-  padding-left:30px;
-  padding-bottom:20px;
+  padding-left: 30px;
+  padding-bottom: 20px;
 }
 
 .seeMore {
@@ -235,7 +232,7 @@ body {
 
 .logoImg {
   width: 70px;
-  height: 40px;
+  height: 38px;
   padding-bottom: 60px;
 }
 
@@ -243,19 +240,19 @@ body {
   margin: auto;
   width: 290px;
   height: 175px;
-  filter:brightness(80%)
+  filter: brightness(85%)
 }
 
 .popularNowImg:hover {
-  filter:brightness(100%);
+  filter: brightness(100%);
 }
 
 .popularNowAnime {
   font-family: "Helvetica Neue", Arial, sans-serif;
   text-align:center;
-  color:#FFF;
-  padding:5px;
-  font-weight:700;
+  color: #FFF;
+  padding: 5px;
+  font-weight: 700;
 }
 
 .quizMainDiv {
@@ -268,24 +265,37 @@ body {
 }
 
 .quizScroll {
-  margin:auto;
-  width:1500px;
+  margin: auto;
+  width: 1500px;
   height: 800px;
-  line-height:3em;
-  overflow:scroll;
-  padding:5px;
+  line-height: 3em;
+  overflow: scroll;
+  padding: 5px;
   position: sticky;
+}
+
+.quizScrollBlur {
+  margin: auto;
+  width: 1500px;
+  height: 800px;
+  line-height: 3em;
+  overflow: scroll;
+  padding: 5px;
+  position: sticky;
+  filter: blur(3px);
+}
+
+.navBlur {
+  filter: blur(3px);
 }
 
 .questionContainer {
   text-align: center;
-  width: 600px;
-  padding-bottom: 10px;
+  width: 700px;
+  height: 460px;
   margin: auto;
   border-radius: 12px;
-  background-color: #c45f1c;
-  filter: alpha(opacity=60);
-  opacity: 0.5;
+  background-color: #23252b;
 }
 
 .questionContainer:hover {
@@ -297,21 +307,23 @@ body {
   color: #FFF;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  padding-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 0.09rem solid #f47521;
 }
 
 .quizAnswer {
   font-family: "Helvetica Neue", Arial, sans-serif;
   font-size: medium;
   font-weight: 700;
-  padding: 5px;
+  padding-left: 5px;
   color: #FFF;
-  filter: alpha(opacity=60);
-  opacity: 0.9;
+  filter: brightness(70%);
 }
 
 .answerLi {
   list-style-type: none;
+  padding-bottom: 10px;
 }
 
 .answerCheck {
@@ -319,38 +331,49 @@ body {
   height: 1em;
   border-radius: 50%;
   vertical-align: middle;
-  border: 1px solid #FFF;
+  border: 1px solid #f47521;
   appearance: none;
   -webkit-appearance: none;
   outline: none;
   cursor: pointer;
-  filter: alpha(opacity=60);
-  opacity: 0.6;
+  filter: brightness(70%);
 } 
 
+.answerCheck:hover + .quizAnswer {
+  filter: brightness(100%)
+}
+
 .answerCheck:hover {
-  border: 2px solid #FFF;
+  border: 2px solid #f47521;
+  filter: brightness(100%);
+}
+
+.answerCheck:checked + .quizAnswer {
+    filter: brightness(100%)
 }
 
 .answerCheck:checked {
-    background-color: #FFF;
+  background-color: #f47521;
+  border: 1px solid #f47521;
+  filter: brightness(100%)
 }
 
 .submitQuizButton {
   font-family: Lato,Helvetica Neue,helvetica,sans-serif;
   text-align: center;
   z-index: 9;
-  position:fixed;
-  top: 230px;
+  position: fixed;
+  top: 200px;
   margin: auto;
-  margin-left:-230px;
-  font-size: large;
+  margin-left: -170px;
+  font-size: medium;
+  width: 420px;
   font-weight: 600;
-  color:#f47521;
-  background-color:#FFF;
-  border: 0.09rem solid #FFF;
-  border-radius: 10px;
-  padding: 80px;
+  color: #FFF;
+  background-color: #000;
+  border: 0.09rem solid #000;
+  border-radius: 50%;
+  padding: 60px;
 }
 
 .submitQuizButton:hover {
@@ -364,17 +387,18 @@ body {
 .chibiHimeImg {
   width: 175px;
   height: 200px;
-  padding:20px;
-  padding-left: 110px;
-  padding-top:50px;
-  display:flex;
+  padding: 20px;
+  padding-left: 70px;
+  padding-top: 25px;
+  display: flex;
+  opacity: 0.9;
 }
 
 .animeResultMainDiv {
-  margin:auto;
+  margin: auto;
   text-align: center;
   color: #FFF;
-  background-color:#000;
+  background-color: #000;
 }
 
 .animeResultContainer {
@@ -390,7 +414,7 @@ body {
 .animeHeader {
   font-family: Lato,Helvetica Neue,helvetica,sans-serif;
   padding-bottom: 20px;
-  border-bottom: 0.09rem solid rgb(48, 48, 48);
+  border-bottom: 0.09rem solid #f47521;
 }
 
 .animeImg {
@@ -402,12 +426,13 @@ body {
 
 .animeP {
   font-family: "Helvetica Neue", Arial, sans-serif;
-  padding:10px;
+  font-weight: 200;
+  padding: 10px;
 }
 
 
 .aAnime:link {
-  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-family: Lato,Helvetica Neue,helvetica,sans-serif;
   color: #FFF;
   font-size: medium;
   font-weight: 700;
@@ -415,7 +440,7 @@ body {
 }
 
 .aAnime:visited {
-  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-family: Lato,Helvetica Neue,helvetica,sans-serif;
   color: #FFF;
   font-size: medium;
   font-weight: 700;
@@ -423,7 +448,7 @@ body {
 }
 
 .aAnime:hover {
-  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-family: Lato,Helvetica Neue,helvetica,sans-serif;
   font-size: medium;
   font-weight: 700;
   text-decoration: none;
@@ -435,13 +460,12 @@ body {
   margin: auto;
   font-size: small;
   font-weight: 600;
-  color:#f47521;
-  background-color:#000;
+  color:  #f47521;
+  background-color: #000;
   border: 0.09rem solid #f47521;
-  border-radius: 2.5px;
   padding: 10px;
   margin-right: 5px;
-  filter:brightness(80%)
+  filter: brightness(90%)
 }
 
 .addWatchListButton:hover {
@@ -454,15 +478,14 @@ body {
   font-size: small;
   font-weight: 600;
   color:#000;
-  background-color:#f47521;
+  background-color: #f47521;
   border: 0.09rem solid #f47521;
-  border-radius:2.5px;
   padding: 10px;
-  filter:brightness(80%)
+  filter: brightness(90%)
 }
 
 .startWatchingButton:hover {
-  filter:brightness(100%);
+  filter: brightness(100%);
 }
 
 .animeLi {
@@ -474,8 +497,8 @@ body {
 .animeLi2 {
   list-style-type: none;
   padding: 10px;
-  padding-top:20px;
-  padding-bottom:20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .watchListImg {
@@ -484,11 +507,11 @@ body {
   width: 350px;
   height: 200px;
   display: block;
-  filter:brightness(70%)
+  filter: brightness(80%)
 }
 
 .watchListImg:hover {
-  filter:brightness(100%);
+  filter: brightness(100%);
   box-shadow: 0 8px 16px 0 #17191d;
 }
 
@@ -498,50 +521,49 @@ body {
 }
 
 .watchListP {
-  font-family: "Helvetica Neue", Arial, sans-serif;
-  padding:5px;
-  padding-bottom: 40px;
-  font-size:18px;
-  border-bottom: 0.09rem solid rgb(48, 48, 48);
+  font-family: Lato,Helvetica Neue,helvetica,sans-serif;
+  padding: 5px;
+  padding-bottom: 20px;
+  font-size: 18px;
+  border-bottom: 0.09rem solid #f47521;
   width: 1300px;
 }
 
 .watchListStart {
   font-family: "Helvetica Neue", Arial, sans-serif;
-  color:#FFF;
+  color: #FFF;
   font-size: small;
   opacity: 0.5;
-  padding-left:5px;
+  padding-left: 5px;
   padding-bottom: 10px;
 }
 
 .watchListAnime {
   font-family: Lato,Helvetica Neue,helvetica,sans-serif;
-  color:#FFF;
-  padding:5px;
+  color: #FFF;
+  padding: 5px;
 }
 
 .watchListButton {
   font-family: Lato,Helvetica Neue,helvetica,sans-serif;
   margin: auto;
-  margin-left:5px;
+  margin-left: 5px;
   font-size: small;
   font-weight: 600;
-  color:#f47521;
-  background-color:#000;
+  color: #f47521;
+  background-color: #000;
   border: 0.09rem solid #f47521;
-  border-radius: 5px;
   padding: 10px;
-  filter:brightness(80%)
+  filter: brightness(90%)
 }
 
 .watchListButton:hover {
-  filter:brightness(100%);
+  filter: brightness(100%);
 }
 
 .watchListContainer {
   background-color: #000;
-  color:#FFF;
+  color: #FFF;
   margin: auto;
   padding-left: 50px;
   padding-top: 10px;
@@ -552,7 +574,7 @@ body {
 
 .watchListAnimeDiv {
   padding: 20px;
-  display:inline-block;
+  display: inline-block;
 }
 
 .animeUl {
@@ -572,13 +594,14 @@ body {
 
 .watchListInput {
   padding: 8px;
-  color:rgb(97, 97, 97);
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  color: rgb(97, 97, 97);
   font-weight: 400;
   background-color: #000;
-  border: 0.09rem solid rgb(48, 48, 48);
+  border: 0.09rem solid rgb(97, 97, 97);
 }
 
 ::placeholder {
   opacity: 1.0;
-  color:rgb(48, 48, 48);
+  color: rgb(97, 97, 97);
 }

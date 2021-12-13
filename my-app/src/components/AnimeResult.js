@@ -15,19 +15,18 @@ function AnimeResult({animeResult}) {
         fetch('http://localhost:8000/savedAnime')
         .then((response) => response.json())
         .then((savedAnimeData) => setWatchList(savedAnimeData))
-    }, [])
-
+    }, []);
 
     function handleAddAnime(newAnimeToWatch) {
         setWatchList([...watchList, newAnimeToWatch]);
-      }
+      };
 
     function handleClick(anime) {
         const newAnimeToWatch = {
           title: anime.title,
           url: anime.url,
           episodes: anime.episodes,
-        };
+        }
     
         fetch("http://localhost:8000/savedAnime", {
           method: "POST",
@@ -39,25 +38,25 @@ function AnimeResult({animeResult}) {
           .then((r) => r.json())
           .then(handleAddAnime)
           .then(() => window.location = "/watchlist")
-      }
+      };
     
     const showAnime = animeList.map((anime) => {
         if (animeResult === anime.genre) {
             return (
-            <div className="animeResultMainDiv" key={anime.id}>
-                <div className="animeResultContainer">
-                    <h1 className="animeHeader">{anime.title}</h1>
-                    <img className="animeImg" alt="Anime scene" src={anime.url}></img>
-                    <p className="animeP">{anime.description}</p>
-                    <li className="animeLi">
-                        <button className="addWatchListButton" onClick={() => handleClick(anime)}>ADD TO WATCHLIST</button>
-                        <a href={anime.episodes} className="aAnime"><button className="startWatchingButton">START WATCHING S1 E1</button></a>
-                    </li>
-                    <li className="animeLi2">
-                        <Link to="/startpage" className="aAnime">Retake crunchyrollette Quiz</Link>
-                    </li>
+                <div className="animeResultMainDiv" key={anime.id}>
+                    <div className="animeResultContainer">
+                        <h1 className="animeHeader">{anime.title}</h1>
+                        <img className="animeImg" alt="Anime scene" src={anime.url}></img>
+                        <p className="animeP">{anime.description}</p>
+                        <li className="animeLi">
+                            <button className="addWatchListButton" onClick={() => handleClick(anime)}>ADD TO WATCHLIST</button>
+                            <a href={anime.episodes} className="aAnime"><button className="startWatchingButton">START WATCHING S1 E1</button></a>
+                        </li>
+                        <li className="animeLi2">
+                            <Link to="/startpage" className="aAnime">Retake crunchyrollette Quiz</Link>
+                        </li>
+                    </div>
                 </div>
-            </div>
             );
         };
     });

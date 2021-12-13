@@ -5,11 +5,10 @@ import AnimeResult from './AnimeResult'
 import QuizQuestions from "./QuizQuestions";
 
 function QuizContainer() {
-    const [quiz, setQuiz] = useState([])
+    const [quiz, setQuiz] = useState([]);
     const [trackedAnswers, setTrackedAnswers] = useState({});
-    const [animeResult, setAnimeResult] = useState("")
-    const [isSubmitted, setSubmitted] = useState(false)
-    const [clickCount, setClickCount] = useState(0)
+    const [animeResult, setAnimeResult] = useState("");
+    const [isSubmitted, setSubmitted] = useState(false);
 
     useEffect(() => {
     fetch('http://localhost:8000/quiz')
@@ -23,8 +22,6 @@ function QuizContainer() {
         key={question.id} 
         trackedAnswers={trackedAnswers}
         setTrackedAnswers={setTrackedAnswers}
-        clickCount={clickCount}
-        setClickCount={setClickCount}
         />
     ));
 
@@ -35,7 +32,7 @@ function QuizContainer() {
         romance: 0,
         sliceOfLife: 0,
         thriller: 0
-    }
+    };
 
    function handleCategories(e) {
        e.preventDefault();
@@ -80,10 +77,12 @@ function QuizContainer() {
     if (Object.keys(trackedAnswers).length === 6) {
         return (
             <div>
-                <NavBar />
+                <div className="navBlur">
+                    <NavBar />
+                </div>
                 <div className="quizMainDiv">
                     <form onSubmit={handleCategories}>
-                        <div className="quizScroll">
+                        <div className="quizScrollBlur">
                             {renderedQuestions}
                         </div>
                         <div className="submitQuizButtonDiv">
@@ -106,7 +105,7 @@ function QuizContainer() {
                 </div>
             </div>
            )
-    }
+        }
     }
 }
 
