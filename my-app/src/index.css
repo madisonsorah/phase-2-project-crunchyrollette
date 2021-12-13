@@ -256,14 +256,14 @@ body {
   position:fixed;
   top: 330px;
   margin: auto;
-  margin-left:-160px;
+  margin-left:-260px;
   font-size: large;
   font-weight: 600;
   color:#FFF;
   background-color:#23252b;
   border: 0.09rem solid #23252b;
   border-radius: 10px;
-  padding: 10px;
+  padding: 100px;
 }
 
 .submitQuizButton:hover {
@@ -271,6 +271,10 @@ body {
   background-color: #FFF;
   border: 0.09rem solid #FFF;
   box-shadow: 3px 3px #23252b, 1em 0 .8em #964300;
+}
+
+.questionContainerBlurred {
+  backdrop-filter: blur(8px);
 }
 
 .animeResultMainDiv {
