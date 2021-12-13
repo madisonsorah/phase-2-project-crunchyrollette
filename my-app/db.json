@@ -117,6 +117,12 @@
       "title": "FLCL: Alternative",
       "url": "https://beta.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/23a034e6810f0b1c4c0a1212d84b8de3.jpg",
       "episodes": "https://beta.crunchyroll.com/series/GRDK3DD4Y/flcl"
+    },
+    {
+      "title": "The Promised Neverland",
+      "url": "https://beta.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/a7243613edbb4322bf20caed6a270b52.jpeg",
+      "episodes": "https://beta.crunchyroll.com/series/GYVD2K1WY/the-promised-neverland",
+      "id": 2
     }
   ]
 }

@@ -48,7 +48,7 @@ body {
 }
 
 .navFormDiv {
-  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-family: Lato,Helvetica Neue,helvetica,sans-serif;
   padding: 5px;
   float: right;
 }
@@ -59,7 +59,7 @@ body {
 }
 
 .aNav:link {
-  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-family: Lato,Helvetica Neue,helvetica,sans-serif;
   color: #FFF;
   font-size: small;
   font-weight: 700;
@@ -67,7 +67,7 @@ body {
 }
 
 .aNav:visited {
-  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-family: Lato,Helvetica Neue,helvetica,sans-serif;
   color: #FFF;
   font-size: small;
   font-weight: 700;
@@ -75,7 +75,7 @@ body {
 }
 
 .aNav:hover {
-  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-family: Lato,Helvetica Neue,helvetica,sans-serif;
   font-size: small;
   font-weight: 700;
   text-decoration: none;
@@ -90,27 +90,14 @@ body {
 
 .navInput {
   padding: 8px;
+  color:rgb(97, 97, 97);
+  background-color: #23252b;
   border: 0.09rem solid rgb(190, 190, 190);
 }
 
 ::placeholder {
-  opacity: 1.0;
+  opacity: 0.5;
   color:rgb(190, 190, 190);
-}
-
-.headerDiv {
-  text-align: center;
-  margin: auto;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 15px;
-  background-color: #000;
-  color: #FFF;
-}
-
-.header {
-  font-family: Nutmeg, sans-serif;
-  text-align: center;
 }
 
 .startPageMainDiv {
@@ -118,7 +105,8 @@ body {
 }
 
 .float-container {
-  padding: 20px;
+  margin:auto;
+  padding: 50px;
 }
 
 .float-child1 {
@@ -139,20 +127,21 @@ body {
 }
 
 .startPageHeader {
-  font-family: Nutmeg, sans-serif;
+  font-family: Lato,Helvetica Neue,helvetica,sans-serif;
   font-size: 50px;
+  padding: 10px;
+  padding-bottom:20px;
+  border-bottom: 0.09rem solid #f47521;
 }
 
 .Hime {
   padding-top: 50px;
   width: 525px;
-  height: 525px;
+  height: 525px;  
 }
 
 .startPageP {
   font-family: "Helvetica Neue", Arial, sans-serif;
-  padding:5px;
-  padding-bottom: 20px;
   font-size:18px;
 }
 
@@ -161,7 +150,7 @@ body {
 }
 
 .startPageButton {
-  font-family: Nutmeg, sans-serif;
+  font-family: Lato,Helvetica Neue,helvetica,sans-serif;
   margin: auto;
   font-size: 15px;
   font-weight: 600;
@@ -183,6 +172,47 @@ body {
   padding: 10px;
 }
 
+.popularNowText {
+  font-family: Lato,Helvetica Neue,helvetica,sans-serif;
+  color:#FFF;
+  border-bottom: 0.09rem solid #f47521;
+  padding:10px;
+}
+
+.popularNowUl {
+  margin:auto;
+  list-style-type: none;
+  float: left;
+  width: 1300px;
+  height: 280px;
+}
+
+.popularNowLi {
+  display: inline-block;
+  padding-top: 20px;
+  padding-right:30px;
+  padding-bottom:20px;
+}
+
+.popularNowImg {
+  margin: auto;
+  width: 290px;
+  height: 175px;
+  filter:brightness(80%)
+}
+
+.popularNowImg:hover {
+  filter:brightness(100%);
+}
+
+.popularNowAnime {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  text-align:center;
+  color:#FFF;
+  padding:5px;
+  font-weight:700;
+}
+
 .quizMainDiv {
   padding: 50px 0;
   text-align: center;
@@ -192,8 +222,17 @@ body {
   background-repeat: no-repeat;
 }
 
+.quizScroll {
+  margin:auto;
+  width:1500px;
+  height: 800px;
+  line-height:3em;
+  overflow:scroll;
+  padding:5px;
+}
+
 .questionContainer {
-  background-color: #fff;
+  background-color: #FFF;
   text-align: center;
   width: 600px;
   padding-bottom: 20px;
@@ -207,18 +246,18 @@ body {
 }
 
 .quizQuestion {
-  font-family: Nutmeg, sans-serif;
+  font-family: Lato,Helvetica Neue,helvetica,sans-serif;
   color: #FFF;
   background-color: #23252b;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  padding: 10px;
+  padding: 20px;
 }
 
 .quizAnswer {
   font-family: "Helvetica Neue", Arial, sans-serif;
   font-size: medium;
-  font-weight: 400;
+  font-weight: 700;
   padding:5px;
   color: #23252b;
   background-color:#FFF;
@@ -240,7 +279,7 @@ body {
   -webkit-appearance: none;
   outline: none;
   cursor: pointer;
-}
+} 
 
 .answerCheck:hover {
   border: 2px solid #23252b;
@@ -251,10 +290,11 @@ body {
 }
 
 .submitQuizButton {
-  font-family: Nutmeg, sans-serif;
+  font-family: Lato,Helvetica Neue,helvetica,sans-serif;
+  text-align: center;
   z-index: 9;
   position:fixed;
-  top: 330px;
+  top: 250px;
   margin: auto;
   margin-left:-260px;
   font-size: large;
@@ -263,14 +303,27 @@ body {
   background-color:#23252b;
   border: 0.09rem solid #23252b;
   border-radius: 10px;
-  padding: 100px;
+  padding: 80px;
 }
 
 .submitQuizButton:hover {
-  color:#23252b;
-  background-color: #FFF;
-  border: 0.09rem solid #FFF;
-  box-shadow: 3px 3px #23252b, 1em 0 .8em #964300;
+  color:#FFF;
+  background-color:#23252b;
+  border: 0.09rem solid #23252b;
+  box-shadow: 0 10px 6px -6px #777;
+  animation: jitter 200ms linear infinite; display:inline-block;
+}
+
+@keyframes jitter { 
+  50% {transform:skewY(0.7deg) skewX(-0.7deg) scale(1.006);};
+}
+
+.chibiHimeImg {
+  width: 175px;
+  height: 200px;
+  padding:20px;
+  padding-left: 110px;
+  display:flex;
 }
 
 .questionContainerBlurred {
@@ -281,33 +334,35 @@ body {
   margin:auto;
   text-align: center;
   color: #FFF;
+  background-color:#000;
 }
 
 .animeResultContainer {
-  background-color: #23252b;
+  background-color: #000;
   text-align: center;
-  width: 1000px;
-  height: 720px;
+  width: 800px;
+  height: 780px;
   padding-top: 10px;
   padding-bottom: 10px;
   margin: auto;
-  box-shadow: 0 8px 16px 0 #964300;
 }
 
 .animeHeader {
-  font-family: Nutmeg, sans-serif;
+  font-family: Lato,Helvetica Neue,helvetica,sans-serif;
+  padding-bottom: 20px;
+  border-bottom: 0.09rem solid rgb(48, 48, 48);
 }
 
 .animeImg {
   margin: auto;
-  padding: 10px;
-  width: 500px;
-  height: 300px;
+  padding-top:20px;
+  width: 800px;
+  height: 450px;
 }
 
 .animeP {
   font-family: "Helvetica Neue", Arial, sans-serif;
-  padding:15px;
+  padding:10px;
 }
 
 
@@ -335,15 +390,50 @@ body {
   color: #f47521;
 }
 
+.addWatchListButton {
+  font-family: Lato,Helvetica Neue,helvetica,sans-serif;
+  margin: auto;
+  font-size: small;
+  font-weight: 600;
+  color:#f47521;
+  background-color:#000;
+  border: 0.09rem solid #f47521;
+  border-radius: 2.5px;
+  padding: 10px;
+  margin-right: 5px;
+  filter:brightness(80%)
+}
+
+.addWatchListButton:hover {
+  filter:brightness(100%);
+}
+
+.startWatchingButton {
+  font-family: Lato,Helvetica Neue,helvetica,sans-serif;
+  margin: auto;
+  font-size: small;
+  font-weight: 600;
+  color:#000;
+  background-color:#f47521;
+  border: 0.09rem solid #f47521;
+  border-radius:2.5px;
+  padding: 10px;
+  filter:brightness(80%)
+}
+
+.startWatchingButton:hover {
+  filter:brightness(100%);
+}
+
 .animeLi {
   font-family: "Helvetica Neue", Arial, sans-serif;
   list-style-type: none;
-  padding: 7px;
+  padding: 10px;
 }
 
 .animeLi2 {
   list-style-type: none;
-  padding-bottom: 20px;
+  padding: 10px;
 }
 
 .watchListImg {
@@ -351,45 +441,13 @@ body {
   padding: 5px;
   width: 350px;
   height: 200px;
-  transition: .5s ease;
-  backface-visibility: hidden;
   display: block;
+  filter:brightness(70%)
 }
 
-.middle {
-  transition: .5s ease;
-  opacity: 0;
-  display:block;
-  text-align:center;
-  top: 50%;
-  left: 17.5%;
-  position:absolute;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-}
-
-.container:link {
-  font-family: "Helvetica Neue", Arial, sans-serif;
-  color: #FFF;
-  font-size: medium;
-  font-weight: 700;
-  text-decoration: none;
-}
-
-.container:visited {
-  font-family: "Helvetica Neue", Arial, sans-serif;
-  color: #FFF;
-  font-size: medium;
-  font-weight: 700;
-  text-decoration: none;
-}
-
-.container:hover .watchListImg {
-  opacity: 0.3;
-}
-
-.container:hover .middle {
-  opacity: 1;
+.watchListImg:hover {
+  filter:brightness(100%);
+  box-shadow: 0 8px 16px 0 #17191d;
 }
 
 .watchListHeader {
@@ -400,30 +458,47 @@ body {
 .watchListP {
   font-family: "Helvetica Neue", Arial, sans-serif;
   padding:5px;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
   font-size:18px;
+  border-bottom: 0.09rem solid rgb(48, 48, 48);
+  width: 1000px;
+}
+
+.watchListStart {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  color:#FFF;
+  font-size: small;
+  opacity: 0.5;
+  padding-left:5px;
+  padding-bottom: 10px;
 }
 
 .watchListAnime {
-  font-family: Nutmeg, sans-serif;
+  font-family: Lato,Helvetica Neue,helvetica,sans-serif;
   color:#FFF;
   padding:5px;
 }
 
 .watchListButton {
-  font-family: Nutmeg, sans-serif;
+  font-family: Lato,Helvetica Neue,helvetica,sans-serif;
   margin: auto;
+  margin-left:5px;
   font-size: small;
   font-weight: 600;
   color:#f47521;
-  background-color:#23252b;
+  background-color:#000;
   border: 0.09rem solid #f47521;
   border-radius: 5px;
-  padding: 5px;
+  padding: 10px;
+  filter:brightness(80%)
+}
+
+.watchListButton:hover {
+  filter:brightness(100%);
 }
 
 .watchListContainer {
-  background-color: #23252b;
+  background-color: #000;
   color:#FFF;
   margin: auto;
   padding-left: 50px;
@@ -445,4 +520,23 @@ body {
 
 .animeLi {
   display: inline;
+}
+
+.watchListSearch {
+  display: inline;
+  float: right;
+  padding: 5px;
+}
+
+.watchListInput {
+  padding: 8px;
+  color:rgb(97, 97, 97);
+  font-weight: 400;
+  background-color: #000;
+  border: 0.09rem solid rgb(48, 48, 48);
+}
+
+::placeholder {
+  opacity: 1.0;
+  color:rgb(48, 48, 48);
 }

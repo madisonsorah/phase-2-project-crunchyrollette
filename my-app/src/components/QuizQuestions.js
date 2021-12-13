@@ -42,7 +42,7 @@ function QuizQuestions({question, trackedAnswers, setTrackedAnswers, setClickCou
     return (
         <div className="quizMainDiv">
             <div className="questionContainer">
-                <h3 className="quizQuestion">{question.question}</h3>
+                <h2 className="quizQuestion">{question.question}</h2>
                 {renderedAnswers}
             </div>
         </div>

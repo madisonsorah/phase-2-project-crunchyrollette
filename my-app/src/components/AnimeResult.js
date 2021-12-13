@@ -50,7 +50,8 @@ function AnimeResult({animeResult}) {
                     <img className="animeImg" alt="Anime scene" src={anime.url}></img>
                     <p className="animeP">{anime.description}</p>
                     <li className="animeLi">
-                        <button onClick={() => handleClick(anime)}>Add to your watch list</button> or <a href={anime.episodes} className="aAnime">click here to watch now!</a>
+                        <button className="addWatchListButton" onClick={() => handleClick(anime)}>ADD TO WATCHLIST</button>
+                        <a href={anime.episodes} className="aAnime"><button className="startWatchingButton">START WATCHING S1 E1</button></a>
                     </li>
                     <li className="animeLi2">
                         <Link to="/startpage" className="aAnime">Retake crunchyrollette Quiz</Link>

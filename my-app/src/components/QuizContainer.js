@@ -84,11 +84,11 @@ function QuizContainer() {
                 <NavBar />
                 <div className="quizMainDiv" style={{ backgroundImage: `url(${OrangeGradiant})` }}>
                     <form onSubmit={handleCategories}>
-                        <div className="questionContainerBlurred">
+                        <div className="quizScroll">
                             {renderedQuestions}
                         </div>
                         <div className="submitQuizButtonDiv">
-                            <button className="submitQuizButton">GET MY ANIME RECOMMENDATION! <img src={ChibiHime}></img></button>
+                            <button className="submitQuizButton">SHOW ME MY ANIME RECOMMENDATION <img className="chibiHimeImg" alt="chibi hime" src={ChibiHime}></img></button>
                         </div>
                     </form>
                 </div>
@@ -100,7 +100,7 @@ function QuizContainer() {
                 <NavBar />
                 <div className="quizMainDiv" style={{ backgroundImage: `url(${OrangeGradiant})` }}>
                     <form onSubmit={handleCategories}>
-                        <div>
+                        <div className="quizScroll">
                             {renderedQuestions}
                         </div>
                     </form>

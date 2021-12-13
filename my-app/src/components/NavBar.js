@@ -30,10 +30,8 @@ function NavBar() {
                     <Link className="aNav" to="/startpage">crunchyrollette Quiz *NEW*</Link>
                 </li>
             </ul>
-            <div className="navFormDiv">
-                <form className="navForm">
-                    <input type="text" className="navInput" placeholder="Anime, Drama, etc."></input>
-                </form>
+            <div className="profileDropdown">
+                <img src=""></img>
             </div>
         </div>
     )
