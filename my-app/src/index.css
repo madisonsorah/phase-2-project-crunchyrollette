@@ -13,7 +13,6 @@ body {
   padding-top: 10px;
   padding-bottom: 60px;
   background-color: #23252b;
-  border-bottom: 0.09rem solid #000;
 }
 
 .navLogo {
@@ -29,7 +28,8 @@ body {
 
 .navImgDiv {
   float: left;
-  padding: 10px;
+  padding-top: 10px;
+  padding-left: 20px;
   text-align: center;
 }
 
@@ -72,7 +72,7 @@ body {
 .profileImage {
   display: inline;
   float: right;
-  padding-right: 10px;
+  padding-right: 16px;
   z-index: 9;
   width: 50px;
   height: 50px;
@@ -115,7 +115,7 @@ body {
 
 .loginGreeting {
   display: inline;
-  margin-left: 525px;
+  margin-left: 535px;
   font-family: Lato,Helvetica Neue,helvetica,sans-serif;
   color: #FFF;
   font-size: small;
@@ -154,7 +154,6 @@ body {
   font-family: Lato,Helvetica Neue,helvetica,sans-serif;
   font-size: 50px;
   border-bottom: 0.09rem solid #f47521;
-  text-shadow: 2px 2px #d46c27;
 }
 
 .Hime {
@@ -342,6 +341,10 @@ body {
 } 
 
 .answerCheck:hover + .quizAnswer {
+  filter: brightness(100%)
+}
+
+.quizAnswer:hover {
   filter: brightness(100%)
 }
 
