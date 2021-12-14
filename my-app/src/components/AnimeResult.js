@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from "react";
 import { Link } from "react-router-dom";
+import HimeBanner from "../images/HimeBanner.png"
 
 function AnimeResult({animeResult}) {
     const [animeList, setAnimeList] = useState([]);
@@ -52,9 +53,7 @@ function AnimeResult({animeResult}) {
                             <button className="addWatchListButton" onClick={() => handleClick(anime)}>ADD TO WATCHLIST</button>
                             <a href={anime.episodes} className="aAnime"><button className="startWatchingButton">START WATCHING S1 E1</button></a>
                         </li>
-                        <li className="animeLi2">
-                            <Link to="/startpage" className="aAnime">Retake crunchyrollette Quiz</Link>
-                        </li>
+                        <Link to="/startpage" className="aAnime">Retake crunchyrollette Quiz</Link>
                     </div>
                 </div>
             );
