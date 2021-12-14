@@ -435,9 +435,9 @@ body {
   font-weight: 200;
 }
 
-
 .aAnime:link {
   text-decoration: none;
+  padding-left: 5px;
   font-family: Lato,Helvetica Neue,helvetica,sans-serif;
   color: #FFF;
   font-size: medium;
@@ -509,6 +509,7 @@ body {
 .watchListImg {
   margin: auto;
   padding: 5px;
+  padding-top: 20px;
   width: 350px;
   height: 200px;
   display: block;
@@ -531,6 +532,7 @@ body {
   width: 1300px;
   font-family: Lato,Helvetica Neue,helvetica,sans-serif;
   font-size: 18px;
+  font-weight: 300;
   border-bottom: 0.09rem solid #f47521;
 }
 
@@ -592,9 +594,18 @@ body {
 }
 
 .watchListSearch {
-  padding: 5px;
+  padding: 10px;
   display: inline;
   float: right;
+}
+
+.searchIcon {
+  padding: 5px;
+  padding-top: 7px;
+  float: right;
+  margin-right: 1190px;
+  width: 20px;
+  height: 20px;
 }
 
 .watchListInput {

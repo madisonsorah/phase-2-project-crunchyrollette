@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from "react";
 import NavBar from "./NavBar"
+import SearchIcon from "../images/SearchIcon.png"
 
 function WatchList() {
     const [watchList, setWatchList] = useState([]);
@@ -38,25 +39,22 @@ function WatchList() {
             )
         });
     
-    function handleSubmit(e) {
-        e.preventDefault();
-        setSearch(e.target.value);
-      };
-    
     return (
         <div>
             <NavBar />
             <div className="watchListContainer">
                 <h1 className="watchListHeader">My Watch List</h1>
                 <p className="watchListP">The series below have been saved to your queue.</p>
-                <form className="watchListSearch" onSubmit={handleSubmit} className="watchListForm">
+                <form className="watchListSearch" className="watchListForm">
                     <input 
                     onChange={(e) => setSearch(e.target.value)} 
                     value={search} 
                     type="text" 
                     className="watchListInput" 
-                    placeholder="Anime Title..">
+                    placeholder="Anime Title.."
+                    >
                     </input>
+                    <img className="searchIcon" alt="searchsubmit" src={SearchIcon}></img>
                 </form>
                 {renderedWatchList}
             </div>
