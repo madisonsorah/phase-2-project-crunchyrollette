@@ -56,7 +56,9 @@ function WatchList() {
                     </input>
                     <img className="searchIcon" alt="searchsubmit" src={SearchIcon}></img>
                 </form>
-                {renderedWatchList}
+                <div className="watchListDiv">
+                    {renderedWatchList}
+                </div>
             </div>
         </div>
     )

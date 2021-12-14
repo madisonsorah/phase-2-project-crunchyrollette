@@ -53,7 +53,10 @@ function AnimeResult({animeResult}) {
                             <button className="addWatchListButton" onClick={() => handleClick(anime)}>ADD TO WATCHLIST</button>
                             <a href={anime.episodes} className="aAnime"><button className="startWatchingButton">START WATCHING S1 E1</button></a>
                         </li>
-                        <Link to="/startpage" className="aAnime">Retake crunchyrollette Quiz</Link>
+                        <div className="himeBanner">
+                            <Link to="/startpage" className="himeA"><img className="himeImg" src={HimeBanner}></img></Link>
+                            <Link to="/startpage" className="himeText">RETAKE QUIZ</Link>
+                        </div>
                     </div>
                 </div>
             );

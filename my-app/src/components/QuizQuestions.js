@@ -42,7 +42,7 @@ function QuizQuestions({question, trackedAnswers, setTrackedAnswers}) {
     return (
         <div className="quizMainDiv">
             <div className="questionContainer">
-                <h2 className="quizQuestion">{question.question}</h2>
+                <h3 className="quizQuestion">{question.question}</h3>
                 {renderedAnswers}
             </div>
         </div>

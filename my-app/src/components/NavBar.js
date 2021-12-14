@@ -43,7 +43,7 @@ function NavBar() {
                 <div className="dropDown">
                     <li className="dropdownLi">Profile</li>
                     <li className="dropdownLi">Settings</li>
-                    <Link to="/watchlist"><li className="dropdownLi">Watch List</li></Link>
+                    <Link to="/watchlist" className="watchListLink"><li className="dropdownLi">Watch List</li></Link>
                     <li className="dropdownLi" onClick={handleClick}>Close Menu</li>
                 </div> 
                 : ""}

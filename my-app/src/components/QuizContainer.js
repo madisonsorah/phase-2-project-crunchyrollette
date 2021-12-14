@@ -96,7 +96,7 @@ function QuizContainer() {
         return (
             <div>
                 <NavBar />
-                <div className="quizMainDiv">
+                <div className="quizContainerDiv">
                     <form onSubmit={handleCategories}>
                         <div className="quizScroll">
                             {renderedQuestions}
