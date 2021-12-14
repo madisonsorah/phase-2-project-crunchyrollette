@@ -339,12 +339,16 @@ body {
   font-size: medium;
   font-weight: 700;
   color: #FFF;
-  filter: brightness(70%);
 }
 
 .answerLi {
   list-style-type: none;
   padding-top: 5px;
+  filter: brightness(75%);
+}
+
+.answerLi:hover {
+  filter: brightness(100%);
 }
 
 .answerCheck {
@@ -358,14 +362,10 @@ body {
   -webkit-appearance: none;
   outline: none;
   cursor: pointer;
-  filter: brightness(70%);
+  filter: brightness(75%);
 } 
 
-.answerCheck:hover + .quizAnswer {
-  filter: brightness(100%)
-}
-
-.quizAnswer:hover {
+.answerCheck:hover + .answerLi {
   filter: brightness(100%)
 }
 
