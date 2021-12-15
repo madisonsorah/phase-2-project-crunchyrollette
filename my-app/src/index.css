@@ -423,15 +423,17 @@ body {
 
 .animeResultMainDiv {
   margin: auto;
+  overflow: hidden;
   position: absolute;
   width: 1442px;
-  height: 1220px;
+  height: 1200px;
   color: #FFF;
   background-color: #000;
 }
 
 .animeResultContainer {
   margin: auto;
+  margin-bottom: 20px;
   padding-top: 80px;
   width: 800px;
   height: 800px;
@@ -458,11 +460,11 @@ body {
 }
 
 .himeBanner {
-  margin-top: 50px;
-  position:absolute;
+  position: absolute;
+  overflow: hidden;
   bottom: 0px;
   left: 37%;
-  top: 898px;
+  top: 932px;
   filter: brightness(90%)
 }
 

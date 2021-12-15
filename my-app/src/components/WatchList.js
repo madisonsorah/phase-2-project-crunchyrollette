@@ -34,7 +34,7 @@ function WatchList() {
                 </div>
                 <h3 className="watchListAnime">{series.title}</h3>
                 <a href={series.episodes} className="aAnime"><button className="startWatchingButton">WATCH S1 E1</button></a> 
-                <button className="watchListButton" onClick={() => handleDelete(series.id)}>Remove from Watch List</button>
+                <button className="watchListButton" onClick={() => handleDelete(series.id)}>REMOVE FROM WATCH LIST</button>
             </div>
             )
         });

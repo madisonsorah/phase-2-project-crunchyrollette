@@ -117,6 +117,12 @@
       "title": "FLCL: Alternative",
       "url": "https://beta.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/23a034e6810f0b1c4c0a1212d84b8de3.jpg",
       "episodes": "https://beta.crunchyroll.com/series/GRDK3DD4Y/flcl"
+    },
+    {
+      "title": "The Faraway Paladin",
+      "url": "https://beta.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/f144ebc9f61c734140f789b23edc4eeb.jpeg",
+      "episodes": "https://beta.crunchyroll.com/series/GEXH3W8G1/the-faraway-paladin",
+      "id": 2
     }
   ]
 }
