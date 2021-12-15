@@ -4,6 +4,7 @@ body {
   background-image: url('images/OrangeGradiant.jpg');
   background-size: 2000px;
   background-repeat: no-repeat;
+  font-smooth: always;
 }
 
 .mainNavDiv {
@@ -278,7 +279,7 @@ body {
 .quizScroll {
   margin: auto;
   position: sticky;
-  padding-top: 80px;
+  padding-top: 90px;
   width: 1440px;
   height: 800px;
   line-height: 3em;
@@ -288,7 +289,7 @@ body {
 .quizScrollBlur {
   margin: auto;
   position: sticky;
-  padding-top: 80px;
+  padding-top: 90px;
   width: 1440px;
   height: 800px;
   line-height: 3em;
@@ -313,7 +314,7 @@ body {
   width: 600px;
   height: 420px;
   border-radius: 12px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   background-color: #23252b;
 }
 
@@ -389,7 +390,7 @@ body {
   top: 200px;
   padding: 60px;
   margin: auto;
-  margin-left: -170px;
+  margin-left: -205px;
   width: 420px;
   text-align: center;
   font-family: Lato,Helvetica Neue,helvetica,sans-serif;
@@ -399,6 +400,7 @@ body {
   background-color: #000;
   border: 0.09rem solid #000;
   border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .submitQuizButton:hover {
@@ -451,8 +453,8 @@ body {
 
 .animeP {
   padding: 10px;
-  font-family: "Helvetica Neue", Arial, sans-serif;
-  font-weight: 200;
+  font-family: Helvetica Neue,helvetica,sans-serif;
+  font-weight: 300;
 }
 
 .himeBanner {
