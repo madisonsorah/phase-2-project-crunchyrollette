@@ -479,7 +479,7 @@ body {
   transform: translate(-50%, -50%);
   font-family: Lato,Helvetica Neue,helvetica,sans-serif;
   color: #FFF;
-  font-size: large;
+  font-size: larger;
   font-weight: 700;
   text-shadow: 2px 2px #db6b21;
 }
