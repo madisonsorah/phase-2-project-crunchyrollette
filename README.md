@@ -1,2 +1,1 @@
-# phase-2-project-crunchyrollette
-Crunchyrollette is a mock web feature for the anime streaming platform Crunchyroll, which enables users to fill out a multiple choice BuzzFeed-style quiz. Based on the user’s responses to each question, the quiz generates a random anime recommendation with a link back to Crunchyroll where the user can directly watch episodes.
+Crunchyrollette is a web feature inspired by the anime streaming platform Crunchyroll, which enables users to fill out a multiple choice quiz and receive a series recommendation based on their responses.
